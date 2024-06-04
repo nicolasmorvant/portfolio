@@ -1,0 +1,23 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-y: scroll;
+  row-gap: 20px;
+}
+.services__title {
+  margin-bottom: 20px;
+}
+.services__title--lightblue {
+  color: #36B8FF;
+}
+.services__item__text {
+  margin-top: 10px;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+/*# sourceMappingURL=Service.css.map */

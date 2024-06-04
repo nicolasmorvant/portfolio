@@ -1,0 +1,75 @@
+@import "../Tool/variables";
+@import "../Tool/mixins";
+
+.nav
+{
+    margin: auto 0;
+    
+    &__list
+    {
+        height: 100%;
+        @include flexContainer(column, space-between, flex-start, nowrap);
+        row-gap: 30px;
+    }
+
+    &__item
+    {
+        position: relative;
+
+        //DÉCORATION DESSOUS
+        .squares
+        {
+            position: absolute;
+            bottom: -5px;
+            left: 9px;
+            width: 180px;
+            display: flex;
+            justify-content: space-between;
+            transition: transform 0.2s ease-in-out;
+
+            &__item
+            {
+                background-color: $lightblue;
+                width: 5px;
+                height: 5px;
+            }
+        }
+    }
+
+    &__link
+    {
+        display: block;
+        position: relative;
+        width: 200px;
+        color: #FFFFFF;
+        padding: 15px 20px;
+        border: 3px solid $lightblue;
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+        transform-origin: left;
+    
+        //LIGNE BLEUE
+        &::before
+        {
+            position: absolute;
+            top: 5px;
+            left: 6px;
+            width: 180px;
+            content: "";
+            border: 1px solid $lightblue;
+            margin-bottom: 10px;
+        }
+
+        &:hover
+        {
+            transform: scaleX(1.1);
+            color: $lightblue;
+        }
+
+        &:hover ~ .squares
+        {
+            transform: scaleX(1.1) translateX(10px);
+        }
+    }
+}
+

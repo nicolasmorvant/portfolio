@@ -1,0 +1,31 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.technologie
+{
+    @include flexContainer(column, center, center, nowrap);
+    row-gap: 20px;
+    width: 100%;
+    overflow: scroll;
+   
+
+    &__title
+    {
+        flex: 0 1 10%;
+
+        &--lightblue
+        {
+            color: $lightblue;
+        }
+    }
+
+    &__desc
+    {
+        background-color: antiquewhite;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

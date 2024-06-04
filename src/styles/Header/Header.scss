@@ -1,0 +1,31 @@
+@import "../Tool/variables";
+@import "../Tool/mixins";
+
+.header
+{
+    @include flexContainer(row, space-between, center, nowrap);
+    overflow: hidden;
+
+    &__text
+    {
+        font-size: 10px;
+    }
+
+    &__picture
+    {
+        width: 150px;
+    }
+
+    &__title
+    {
+        &--lightblue
+        {
+            color: $lightblue;
+        }
+    }
+
+    &__subtitle
+    {
+        margin: 15px 0;
+    }
+}

@@ -1,0 +1,56 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.formation
+{
+    @include flexContainer(column, center, center, nowrap);
+    row-gap: 20px;
+    width: 100%;
+    overflow: scroll;
+   
+
+    &__title
+    {
+        &--lightblue
+        {
+            color: $lightblue;
+        }
+    }
+
+    &__item
+    {
+        @include flexContainer(row, space-between, flex-start, wrap);
+        
+        &:not(last)
+        {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__year
+    {
+        flex: 0 1 10%;
+        
+        &--tearose
+        {
+            color: $tearose;
+        }
+    }
+
+    &__desc
+    {
+        flex: 0 1 85%;
+
+        &__title
+        {
+            margin-bottom: 10px;
+        }
+
+        &__text
+        {
+            font-size: 12px;
+        }
+    }
+
+
+}

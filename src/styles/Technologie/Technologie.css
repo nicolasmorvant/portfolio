@@ -1,0 +1,26 @@
+.technologie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 20px;
+  width: 100%;
+  overflow: scroll;
+}
+.technologie__title {
+  flex: 0 1 10%;
+}
+.technologie__title--lightblue {
+  color: #36B8FF;
+}
+.technologie__desc {
+  background-color: antiquewhite;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=Technologie.css.map */

@@ -1,0 +1,63 @@
+[
+    {
+        "image": "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+        "alt": "React"
+    },
+    {
+        "image": "https://cdn.worldvectorlogo.com/logos/sass-1.svg",
+        "alt": "Sass"
+    },
+    {
+        "image": "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+        "alt": "Typescript"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg",
+      "alt": "Bootstrap"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/jquery-1.svg",
+      "alt": "jQuery"
+    },
+    {
+        "image": "https://cdn.worldvectorlogo.com/logos/vitejs.svg",
+        "alt": "Vite"
+    },
+    {
+        "image": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+        "alt": "Git"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+      "alt": "MongoDB"
+    },
+    {
+        "image": "https://cdn.worldvectorlogo.com/logos/php-1.svg",
+        "alt": "PHP"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/mysql-3.svg",
+      "alt": "MySQL"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/nodejs.svg",
+      "alt": "Node"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/postman.svg",
+      "alt": "Postman"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/symfony.svg",
+      "alt": "Symfony"
+    },
+    {
+        "image": "https://cdn.worldvectorlogo.com/logos/google-lighthouse-icon-may-2019-.svg",
+        "alt": "Lighthouse"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/wave-2.svg",
+      "alt": "Wave"
+    }
+  ]
+  

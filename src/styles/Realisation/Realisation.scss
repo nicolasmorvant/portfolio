@@ -1,0 +1,15 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.realisation
+{
+    &__title
+    {
+        margin-bottom: 20px;
+
+        &--lightblue
+        {
+            color: $lightblue;
+        }
+    }
+}

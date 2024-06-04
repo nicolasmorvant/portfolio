@@ -1,0 +1,11 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.card
+{
+    &__img
+    {
+        width: 50px;
+        height: auto;
+    }
+}   

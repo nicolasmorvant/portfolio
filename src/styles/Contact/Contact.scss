@@ -1,0 +1,61 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.contact
+{
+    @include flexContainer(column,center,center,nowrap);
+    row-gap: 20px;
+    overflow: scroll;
+    width: 100%;
+
+    &__title
+    {
+        &--lightblue
+        {
+            color: $lightblue;
+        }
+    }
+
+    &__mail__and__phone i
+    {
+        margin-right: 20px;
+    }
+
+    &__mail
+    {
+        margin-bottom: 20px;
+    }
+
+    &__social
+    {
+        text-align: center;
+
+        i
+        {
+            color: white;
+        
+            &:not(last)
+            {
+                margin-right: 20px;
+            }
+
+            &:hover
+            {
+                color: $tearose;
+            }
+        }
+    }
+}
+
+button
+{
+  color: #FFFFFF;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+i
+{
+    color: $lightblue;
+}

@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.header__text {
+  font-size: 10px;
+}
+.header__picture {
+  width: 150px;
+}
+.header__title--lightblue {
+  color: #36B8FF;
+}
+.header__subtitle {
+  margin: 15px 0;
+}
+
+/*# sourceMappingURL=Header.css.map */

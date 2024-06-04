@@ -1,0 +1,40 @@
+.formation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 20px;
+  width: 100%;
+  overflow: scroll;
+}
+.formation__title--lightblue {
+  color: #36B8FF;
+}
+.formation__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.formation__item:not(last) {
+  margin-bottom: 25px;
+}
+.formation__year {
+  flex: 0 1 10%;
+}
+.formation__year--tearose {
+  color: #F7CAC9;
+}
+.formation__desc {
+  flex: 0 1 85%;
+}
+.formation__desc__title {
+  margin-bottom: 10px;
+}
+.formation__desc__text {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=Formation.css.map */
