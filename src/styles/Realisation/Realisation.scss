@@ -7,7 +7,7 @@
     row-gap: 20px;
     width: 100%;
 
-    @media(max-width: 576px)
+    @media(max-width: 768px)
     {
         margin-top: 50px;
     }
@@ -32,9 +32,11 @@
         overflow: hidden;
         transition: border-color 1s ease-in-out;
 
-        @media(max-width: 576px)
+        @media(max-width: 768px)
         {
-            height: 380px;
+            height: 300px;
+            max-height: 300px;
+            border: none;
         }
 
         .projet
@@ -94,6 +96,11 @@
                 height: 100%;
                 opacity: 1;
                 transition: opacity 1s ease-in-out;
+
+                @media(max-width: 768px)
+                {
+                    object-fit: contain;
+                }
             }
 
             &__link
@@ -106,7 +113,7 @@
                 opacity: 0;
                 transition: opacity 1s ease-in-out;
 
-                @media(max-width: 576px)
+                @media(max-width: 768px)
                 {
                     width: 150px;
                     margin: 25px auto;
