@@ -7,7 +7,7 @@
         "technos": ["HTML", "CSS", "Github"],
         "images": [
             {
-                "src": "../assets/booki.webp",
+                "src": "/portfolio/assets/booki.webp",
                 "alt": "Capture d'écran du site Booki"
             }
         ]
@@ -20,7 +20,7 @@
         "technos": ["Javascript", "Node.js", "Swagger", "Postman", "Github"],
         "images": [
             {
-                "src": "../assets/sophieBluel.webp",
+                "src": "/src/assets/sophieBluel.webp",
                 "alt": "Capture d'écran du site de Sophie Bluel"
             }
         ]
@@ -33,7 +33,7 @@
         "technos": ["jQuery", "Lighthouse", "Wave", "Rich Snippets", "Github"],
         "images": [
             {
-                "src": "../assets/ninaCarducci.webp",
+                "src": "./src/assets/ninaCarducci.webp",
                 "alt": "Capture d'écran du site de Nina Carducci"
             }
         ]
@@ -66,7 +66,7 @@
         ],
         "images": [
             {
-                "src": "../assets/monVieuxGrimoire.webp",
+                "src": "./assets/monVieuxGrimoire.webp",
                 "alt": "Capture d'écran du site Mon vieux grimoire"
             }
         ]
