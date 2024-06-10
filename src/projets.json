@@ -7,7 +7,7 @@
         "technos": ["HTML", "CSS", "Github"],
         "images": [
             {
-                "src": "src/assets/projets/booki/booki.webp",
+                "src": "/portfolio/assets/projets/booki/booki.webp",
                 "alt": "Capture d'écran du site Booki"
             }
         ]
@@ -20,7 +20,7 @@
         "technos": ["Javascript", "Node.js", "Swagger", "Postman", "Github"],
         "images": [
             {
-                "src": "src/assets/projets/sophieBluel/sophieBluel.webp",
+                "src": "/portfolio/assets/projets/sophieBluel/sophieBluel.webp",
                 "alt": "Capture d'écran du site de Sophie Bluel"
             }
         ]
@@ -33,7 +33,7 @@
         "technos": ["jQuery", "Lighthouse", "Wave", "Rich Snippets", "Github"],
         "images": [
             {
-                "src": "src/assets/projets/ninaCarducci/ninaCarducci.webp",
+                "src": "/portfolio/assets/projets/ninaCarducci/ninaCarducci.webp",
                 "alt": "Capture d'écran du site de Nina Carducci"
             }
         ]
@@ -46,7 +46,7 @@
         "technos": ["React", "React Router", "Sass", "Node.js", "Github"],
         "images": [
             {
-                "src": "./src/assets/projets/kasa/kasa.webp",
+                "src": "/portfolio/assets/projets/kasa/kasa.webp",
                 "alt": "Capture d'écran du site Kasa"
             }
         ]
@@ -66,7 +66,7 @@
         ],
         "images": [
             {
-                "src": "src/assets/projets/monVieuxGrimoire/monVieuxGrimoire.webp",
+                "src": "/portfolio/assets/projets/monVieuxGrimoire/monVieuxGrimoire.webp",
                 "alt": "Capture d'écran du site Mon vieux grimoire"
             }
         ]
