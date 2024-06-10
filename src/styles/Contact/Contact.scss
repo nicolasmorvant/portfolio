@@ -5,8 +5,12 @@
 {
     @include flexContainer(column,center,center,nowrap);
     row-gap: 20px;
-    overflow: scroll;
     width: 100%;
+
+    @media(max-width: 576px)
+    {
+        margin-top: 50px;
+    }
 
     &__title
     {
@@ -28,34 +32,37 @@
 
     &__social
     {
+        @include flexContainer(row,center,center,nowrap);
+        column-gap: 20px;
         text-align: center;
+        width: 100%;
+
+        @media(max-width: 768px)
+        {
+            display: none;
+        }
 
         i
         {
             color: white;
+            font-size: 25px;
         
-            &:not(last)
-            {
-                margin-right: 20px;
-            }
-
             &:hover
             {
-                color: $tearose;
+                color: $lightblue;
             }
         }
     }
-}
 
-button
-{
-  color: #FFFFFF;
-  background-color: transparent;
-  padding: 10px;
-  border: 1px solid white;
-}
+    .loader__container
+    {
+        display: none;
 
-i
-{
-    color: $lightblue;
+        @media(max-width: 768px) 
+        {
+            display: block;
+            margin-top: 100px;
+            height: 200px; 
+        }
+    }
 }

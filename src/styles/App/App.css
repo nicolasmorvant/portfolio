@@ -12,8 +12,8 @@ body {
   background-color: #0F0715;
   color: white;
   height: 100vh;
-  -webkit-font-smoothing: antialiased; /* Pour Chrome, Safari */
-  -moz-osx-font-smoothing: grayscale; /* Pour Firefox */
+  /*-webkit-font-smoothing: antialiased;   Pour Chrome, Safari 
+  -moz-osx-font-smoothing: grayscale;   /* Pour Firefox */
   text-rendering: optimizeLegibility;
 }
 
@@ -36,15 +36,52 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 200px;
+  column-gap: 160px;
   height: 100%;
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .main-container {
+    margin: 40px;
+    flex-direction: column;
+    column-gap: normal;
+    row-gap: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    justify-content: flex-start;
+    column-gap: 0;
+    row-gap: 30px;
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid #36B8FF;
+    margin: 0;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    transition: transform 1s ease;
+  }
 }
 
 .loaded {
   opacity: 1;
   background-color: black;
+}
+@media (max-width: 1024px) {
+  .loaded {
+    background-color: #0F0715;
+  }
+}
+
+@media (max-width: 768px) {
+  .tourne {
+    transform: rotateY(-360deg);
+    animation-name: disparition;
+  }
+  .backgroundChange {
+    background-color: #202124;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,7 @@
+User-agent: *
+Sitemap: http://nicolasmorvant.github.io/portfolio/sitemap.xml
+
+Disallow: /src/components/
+Disallow: /src/styles/
+
+Allow: /src/assets/

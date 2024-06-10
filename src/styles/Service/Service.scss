@@ -5,8 +5,12 @@
 {
     @include flexContainer(column, center, center, nowrap);
     width: 100%;
-    overflow-y: scroll;
     row-gap: 20px;
+
+    @media(max-width: 576px)
+    {
+        margin-top: 25px;   
+    }
 
     &__title
     {
@@ -20,11 +24,26 @@
 
     &__item
     {
+        &__title
+        {
+            color: $coolorange;
+
+            @media(max-width: 576px)
+            {
+                font-size: 15px;   
+            }
+        }
+
         &__text
         {
             margin-top: 10px;
             font-size: 12px;
             padding-left: 20px;
+
+            @media(max-width: 576px)
+            {
+                font-size: 15px;
+            }
         }
     }
 }

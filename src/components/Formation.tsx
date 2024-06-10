@@ -2,7 +2,7 @@ import '../styles/Formation/Formation.css';
 
 const Formation: React.FC = () => {
   return (
-    <section className="formation">
+    <section className="formation" id='formation'>
         <h3 className="formation__title">Form<span className='formation__title--lightblue'>ation</span></h3>
         
         <div className="formation__details">

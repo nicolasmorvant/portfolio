@@ -2,7 +2,7 @@ import '../styles/Service/Service.css';
 
 const Service: React.FC = () => {
   return (
-    <section className="services">
+    <section className="services" id='services'>
         <h3 className="services__title">Serv<span className='services__title--lightblue'>ices</span></h3>
         
         <div className="services__item">

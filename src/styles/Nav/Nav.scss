@@ -5,35 +5,45 @@
 {
     margin: auto 0;
     
+    @media(max-width: 1024px)
+    {
+        margin: 0 auto;
+    }
+
+    @media(max-width: 768px)
+    {
+        @include flexContainer(row, space-around, flex-start, wrap);
+        width: 100%;
+        flex: 0 1 25%;
+        margin-top: 30px;
+    }
+
     &__list
     {
-        height: 100%;
         @include flexContainer(column, space-between, flex-start, nowrap);
+        height: 100%;
         row-gap: 30px;
+
+        @media(max-width: 1024px)
+        {
+            @include flexContainer(row,center,flex-start,wrap);
+            width: 100%;
+            height: auto;
+            column-gap: 30px;
+        }
+
+        @media(max-width: 768px)
+        {
+            @include flexContainer(column, flex-start, flex-start, nowrap);
+            width: 50%;
+            height: 100%;
+            row-gap: 0;
+        }
     }
 
     &__item
     {
         position: relative;
-
-        //DÉCORATION DESSOUS
-        .squares
-        {
-            position: absolute;
-            bottom: -5px;
-            left: 9px;
-            width: 180px;
-            display: flex;
-            justify-content: space-between;
-            transition: transform 0.2s ease-in-out;
-
-            &__item
-            {
-                background-color: $lightblue;
-                width: 5px;
-                height: 5px;
-            }
-        }
     }
 
     &__link
@@ -47,23 +57,51 @@
         text-align: center;
         transition: transform 0.2s ease-in-out;
         transform-origin: left;
+
+        @media(max-width: 768px)
+        {
+            width: auto;
+            border: none;
+            color: $lightblue;
+            transition: color 0.8s ease-in-out;
+            text-align: left;
+            font-size: 16px;
+            padding: 10px 0px;
+
+            &:first-child
+            {
+                padding-top: 0;
+            }
+        }
     
         //LIGNE BLEUE
         &::before
         {
+            content: "";
+            display: block;
             position: absolute;
             top: 5px;
             left: 6px;
             width: 180px;
-            content: "";
             border: 1px solid $lightblue;
             margin-bottom: 10px;
+
+            @media(max-width: 768px)
+            {
+                display: none;   
+            }
         }
 
         &:hover
         {
             transform: scaleX(1.1);
             color: $lightblue;
+
+            @media(max-width: 768px)
+            {
+                color: $coolorange;
+                transform: none;
+            }
         }
 
         &:hover ~ .squares
@@ -71,5 +109,33 @@
             transform: scaleX(1.1) translateX(10px);
         }
     }
+
+    &__social
+    {
+        display: none;
+
+        @media(max-width: 768px)
+        {
+            @include flexContainer(row, space-between, center, wrap);
+            gap: 15px;
+
+            i
+            {
+                font-size: 25px;
+
+                &:hover
+                {
+                    color: $lightblue;
+                }
+            }
+        }
+    }
 }
 
+@media(max-width: 768px)
+{
+  .miroir
+  { 
+      transform: translateX(180deg);
+  }
+}

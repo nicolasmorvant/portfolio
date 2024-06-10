@@ -3,32 +3,44 @@
 @import '../Tool/mixins';
 @import '../Tool/variables';
 
-$cubeSize: 400px;
+$cubeDesktop: 400px;
 
-.cube__container 
-{
-    margin-left: 100px;
-}
 
 .cube__container, .cube 
 {
-    width: $cubeSize;
-    height: $cubeSize;
+    width: $cubeDesktop;
+    height: $cubeDesktop;
     transform-style: preserve-3d;
+
+    @media(max-width: 768px)
+    {
+        width: 100%;
+        height: auto;
+        transform-style: initial;
+    }
 }
 
 .cube__container 
 {
     @include flexContainer(column, center, flex-start, wrap);
-    perspective: math.div($cubeSize * 4, 3);
+    perspective: math.div($cubeDesktop * 12, 3); //ou * 4
+
+    @media(max-width: 768px)
+    {
+        perspective: none;
+    }
 }
 
 .cube 
 {
     position: relative;
     transition: transform 1s ease-in-out;
-    backface-visibility: hidden;
     will-change: transform;
+    
+    @media(max-width: 768px) 
+    {
+        transition: none;
+    }
 
     //FACE
     &__side 
@@ -42,41 +54,79 @@ $cubeSize: 400px;
         padding: 0 20px 0;
         opacity: 1;
         will-change: transform;
-        //overflow: hidden;
+
+        @media(max-width: 768px) 
+        {
+            position: relative;
+            transition: none;
+            border: 0;
+            will-change: initial;
+        }
 
         &--front 
         {
-            transform: translateZ(math.div($cubeSize, 2) + 13px);
+            transform: translateZ(math.div($cubeDesktop, 2) + 13px);
+
+            @media(max-width: 768px)
+            {
+                transform: none;   
+            }
         }
 
         &--back 
         {
-            transform: rotateY(180deg) translateZ(math.div($cubeSize, 2) + 13px);
+            transform: rotateY(180deg) translateZ(math.div($cubeDesktop, 2) + 13px);
+
+            @media(max-width: 768px)
+            {
+                transform: none;   
+            }
         }
 
         &--left 
         {
-            transform: rotateY(-90deg) translateZ(math.div($cubeSize, 2) + 13px);
+            transform: rotateY(-90deg) translateZ(math.div($cubeDesktop, 2) + 13px);
+
+            @media(max-width: 768px)
+            {
+                transform: none;   
+            }
         }
 
         &--right 
         {
-            transform: rotateY(90deg) translateZ(math.div($cubeSize, 2) + 13px);
+            transform: rotateY(90deg) translateZ(math.div($cubeDesktop, 2) + 13px);
+
+            @media(max-width: 768px)
+            {
+                transform: none;   
+            }
         }
 
         &--top 
         {
-            transform: rotateX(90deg) translateZ(math.div($cubeSize, 2) + 13px);
+            transform: rotateX(90deg) translateZ(math.div($cubeDesktop, 2) + 13px);
+
+            @media(max-width: 768px)
+            {
+                transform: none;   
+            }
         }
 
         &--bottom 
         {
-            transform: rotateX(-90deg) translateZ(math.div($cubeSize, 2) + 13px);
+            transform: rotateX(-90deg) translateZ(math.div($cubeDesktop, 2) + 13px);
+
+            @media(max-width: 768px)
+            {
+                transform: none;   
+            }
         }
 
         //BORDER EXTERNE TOP
         &::before
         {
+            display: block;
             content: "";
             position: absolute;
             top: -19px;
@@ -85,11 +135,17 @@ $cubeSize: 400px;
             width: 200px;
             height: 10px;
             clip-path: polygon(0 0, 97% 0, 100% 100%, 0% 100%);
+
+            @media(max-width: 768px)
+            {
+                display: none;
+            }
         }
 
         //BORDER EXTERNE LEFT
         &::after
         {
+            display: block;
             content: "";
             position: absolute;
             top: -10px;
@@ -97,100 +153,91 @@ $cubeSize: 400px;
             background-color: $lightblue;
             width: 10px;
             height: 100px;
-            clip-path: polygon(0 0, 97% 0, 100% 100%, 0% 100%);
-        }
-    }
+            clip-path: polygon(0px 0px, 100% 0px, 100% 90%, 100% 90%, 16px 103.67%, 0% 89.27%);
 
-    .dashed
-    {
-        
-        height: 10px;
-        position: absolute;
-        top: -19px;
-        left: 175px;
-        display: flex;
-        justify-content: space-between;
-        column-gap: 5px;
-        z-index: 999;
-        
-        &__part
+            @media(max-width: 768px)
+            {
+                display: none;   
+            }
+        }
+
+        @media(max-width: 768px)
         {
-            height: 100%;
-            width: 5px;
-            background-color: $lightblue;
-            transform: skewX(30deg);
+            backface-visibility: hidden;
         }
-    }
-
-    .squares
-    {
-        height: 12px;
-        position: absolute;
-        bottom: -19px;
-        left: 20px;
-        width: 250px;
-        border: 1px solid $lightblue;
-        border-top: 0;
-        padding: 0 5px 10px;
-        display: flex;
-        justify-content: space-between;
-
-        &__item
-        {
-            height: 9px;
-            width: 8px;
-            background-color: $lightblue;
-        }
-    }
-
-    .broken
-    {
-        
-        position: absolute;
-        bottom: -10px;
-        right: 0;
-        //border: 10px solid white;
-        width: 60px;
-        height: 60px; 
-        z-index: 999;
-        //transform: skewX(-30deg);
     }
 }
 
 //OPACITÉ DES FACES INACTIVES
-.opaque 
+@media(min-width: 768px)
 {
-    opacity: 0.2;
+    .opaque 
+    {
+        opacity: 0.2;
+    }
+}
+
+@media(max-width: 767.98px)
+{
+    .opaque 
+    {
+        display: none;
+    }
 }
 
 .rotation--front 
 {
-    transform: rotateX(0deg) rotateY(0deg);
+    @media(min-width: 768px)
+    {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
 }
 
 .rotation--back 
 {
-    transform: rotateX(0deg) rotateY(180deg);
+    @media(min-width: 768px)
+    {
+        transform: rotateX(0deg) rotateY(180deg);
+    }
 }
 
-//SERVICES
 .rotation--left 
 {
-    transform: rotateX(0deg) rotateY(90deg);
+    @media(min-width: 768px)
+    {
+        transform: rotateX(0deg) rotateY(90deg);
+    }
 }
 
-//TECHNOLOGIES
+
 .rotation--right 
 {
-    transform: rotateX(0deg) rotateY(-90deg);
+    @media(min-width: 768px)
+    {
+        transform: rotateX(0deg) rotateY(-90deg);
+    }
 }
 
 .rotation--top 
 {
-    transform: rotateX(-90deg) rotateY(0deg);
+    @media(min-width: 768px)
+    {
+        transform: rotateX(-90deg) rotateY(0deg);
+    }
 }
 
 .rotation--bottom 
 {
-    transform: rotateX(90deg) rotateY(0deg);
+    @media(min-width: 768px)
+    {
+        transform: rotateX(90deg) rotateY(0deg);
+    }
+}
+
+@media(max-width: 768px)
+{
+  .miroir
+  { 
+      transform: translateX(180deg);
+  }
 }

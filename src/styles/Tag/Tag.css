@@ -1,3 +1,9 @@
-
+.tag {
+  font-size: 14px;
+  padding: 5px;
+  color: #36B8FF;
+  background-color: transparent;
+  border: 2px solid #36B8FF;
+}
 
 /*# sourceMappingURL=Tag.css.map */

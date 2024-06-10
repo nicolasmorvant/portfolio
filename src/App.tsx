@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Loader from './components/Loader';
-import Nav from './components/Nav';
-import Cube from './components/Cube';
+import Loader from './components/Loader.tsx';
+import Nav from './components/Nav.tsx';
+import Cube from './components/Cube.tsx';
 import './styles/App/App.css';
 
 const App: React.FC = () => {

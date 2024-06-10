@@ -5,8 +5,12 @@
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
-  overflow-y: scroll;
   row-gap: 20px;
+}
+@media (max-width: 576px) {
+  .services {
+    margin-top: 25px;
+  }
 }
 .services__title {
   margin-bottom: 20px;
@@ -14,10 +18,23 @@
 .services__title--lightblue {
   color: #36B8FF;
 }
+.services__item__title {
+  color: #FF9536;
+}
+@media (max-width: 576px) {
+  .services__item__title {
+    font-size: 15px;
+  }
+}
 .services__item__text {
   margin-top: 10px;
   font-size: 12px;
   padding-left: 20px;
+}
+@media (max-width: 576px) {
+  .services__item__text {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=Service.css.map */

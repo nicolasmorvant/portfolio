@@ -1,11 +1,14 @@
-.cube__container {
-  margin-left: 100px;
-}
-
 .cube__container, .cube {
   width: 400px;
   height: 400px;
   transform-style: preserve-3d;
+}
+@media (max-width: 768px) {
+  .cube__container, .cube {
+    width: 100%;
+    height: auto;
+    transform-style: initial;
+  }
 }
 
 .cube__container {
@@ -14,14 +17,23 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  perspective: 533.3333333333px;
+  perspective: 1600px;
+}
+@media (max-width: 768px) {
+  .cube__container {
+    perspective: none;
+  }
 }
 
 .cube {
   position: relative;
   transition: transform 1s ease-in-out;
-  backface-visibility: hidden;
   will-change: transform;
+}
+@media (max-width: 768px) {
+  .cube {
+    transition: none;
+  }
 }
 .cube__side {
   display: flex;
@@ -34,25 +46,64 @@
   opacity: 1;
   will-change: transform;
 }
+@media (max-width: 768px) {
+  .cube__side {
+    position: relative;
+    transition: none;
+    border: 0;
+    will-change: initial;
+  }
+}
 .cube__side--front {
   transform: translateZ(213px);
+}
+@media (max-width: 768px) {
+  .cube__side--front {
+    transform: none;
+  }
 }
 .cube__side--back {
   transform: rotateY(180deg) translateZ(213px);
 }
+@media (max-width: 768px) {
+  .cube__side--back {
+    transform: none;
+  }
+}
 .cube__side--left {
   transform: rotateY(-90deg) translateZ(213px);
+}
+@media (max-width: 768px) {
+  .cube__side--left {
+    transform: none;
+  }
 }
 .cube__side--right {
   transform: rotateY(90deg) translateZ(213px);
 }
+@media (max-width: 768px) {
+  .cube__side--right {
+    transform: none;
+  }
+}
 .cube__side--top {
   transform: rotateX(90deg) translateZ(213px);
+}
+@media (max-width: 768px) {
+  .cube__side--top {
+    transform: none;
+  }
 }
 .cube__side--bottom {
   transform: rotateX(-90deg) translateZ(213px);
 }
+@media (max-width: 768px) {
+  .cube__side--bottom {
+    transform: none;
+  }
+}
 .cube__side::before {
+  display: block;
   content: "";
   position: absolute;
   top: -19px;
@@ -62,7 +113,13 @@
   height: 10px;
   clip-path: polygon(0 0, 97% 0, 100% 100%, 0% 100%);
 }
+@media (max-width: 768px) {
+  .cube__side::before {
+    display: none;
+  }
+}
 .cube__side::after {
+  display: block;
   content: "";
   position: absolute;
   top: -10px;
@@ -70,76 +127,69 @@
   background-color: #36B8FF;
   width: 10px;
   height: 100px;
-  clip-path: polygon(0 0, 97% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 90%, 100% 90%, 16px 103.67%, 0% 89.27%);
 }
-.cube .dashed {
-  height: 10px;
-  position: absolute;
-  top: -19px;
-  left: 175px;
-  display: flex;
-  justify-content: space-between;
-  column-gap: 5px;
-  z-index: 999;
+@media (max-width: 768px) {
+  .cube__side::after {
+    display: none;
+  }
 }
-.cube .dashed__part {
-  height: 100%;
-  width: 5px;
-  background-color: #36B8FF;
-  transform: skewX(30deg);
-}
-.cube .squares {
-  height: 12px;
-  position: absolute;
-  bottom: -19px;
-  left: 20px;
-  width: 250px;
-  border: 1px solid #36B8FF;
-  border-top: 0;
-  padding: 0 5px 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.cube .squares__item {
-  height: 9px;
-  width: 8px;
-  background-color: #36B8FF;
-}
-.cube .broken {
-  position: absolute;
-  bottom: -10px;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  z-index: 999;
+@media (max-width: 768px) {
+  .cube__side {
+    backface-visibility: hidden;
+  }
 }
 
-.opaque {
-  opacity: 0.2;
+@media (min-width: 768px) {
+  .opaque {
+    opacity: 0.2;
+  }
+}
+@media (max-width: 767.98px) {
+  .opaque {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .rotation--front {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
 }
 
-.rotation--front {
-  transform: rotateX(0deg) rotateY(0deg);
+@media (min-width: 768px) {
+  .rotation--back {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
 }
 
-.rotation--back {
-  transform: rotateX(0deg) rotateY(180deg);
+@media (min-width: 768px) {
+  .rotation--left {
+    transform: rotateX(0deg) rotateY(90deg);
+  }
 }
 
-.rotation--left {
-  transform: rotateX(0deg) rotateY(90deg);
+@media (min-width: 768px) {
+  .rotation--right {
+    transform: rotateX(0deg) rotateY(-90deg);
+  }
 }
 
-.rotation--right {
-  transform: rotateX(0deg) rotateY(-90deg);
+@media (min-width: 768px) {
+  .rotation--top {
+    transform: rotateX(-90deg) rotateY(0deg);
+  }
 }
 
-.rotation--top {
-  transform: rotateX(-90deg) rotateY(0deg);
+@media (min-width: 768px) {
+  .rotation--bottom {
+    transform: rotateX(90deg) rotateY(0deg);
+  }
 }
 
-.rotation--bottom {
-  transform: rotateX(90deg) rotateY(0deg);
+@media (max-width: 768px) {
+  .miroir {
+    transform: translateX(180deg);
+  }
 }
 
 /*# sourceMappingURL=Cube.css.map */

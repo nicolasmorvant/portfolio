@@ -6,7 +6,11 @@
   flex-wrap: nowrap;
   row-gap: 20px;
   width: 100%;
-  overflow: scroll;
+}
+@media (max-width: 576px) {
+  .technologie {
+    margin-top: 50px;
+  }
 }
 .technologie__title {
   flex: 0 1 10%;
@@ -14,13 +18,43 @@
 .technologie__title--lightblue {
   color: #36B8FF;
 }
+@media (max-width: 576px) {
+  .technologie__title {
+    margin-bottom: 20px;
+  }
+}
 .technologie__desc {
-  background-color: antiquewhite;
-  padding: 5px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.technologie__desc__img {
+  filter: invert(100%);
+}
+.technologie__desc__img:hover {
+  animation: rotation 0.8s ease-in;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  33% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  66% {
+    transform: rotateX(270deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
 }
 
 /*# sourceMappingURL=Technologie.css.map */
