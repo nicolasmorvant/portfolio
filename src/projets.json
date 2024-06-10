@@ -46,7 +46,7 @@
         "technos": ["React", "React Router", "Sass", "Node.js", "Github"],
         "images": [
             {
-                "src": "src/assets/projets/kasa/kasa.webp",
+                "src": "./src/assets/projets/kasa/kasa.webp",
                 "alt": "Capture d'écran du site Kasa"
             }
         ]
