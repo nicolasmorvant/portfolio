@@ -7,7 +7,7 @@
         "technos": ["HTML", "CSS", "Github"],
         "images": [
             {
-                "src": "../assets/booki.webp",
+                "src": "https://i.ibb.co/sqvCW7j/booki.webp",
                 "alt": "Capture d'écran du site Booki"
             }
         ]
@@ -20,7 +20,7 @@
         "technos": ["Javascript", "Node.js", "Swagger", "Postman", "Github"],
         "images": [
             {
-                "src": "../assets/sophieBluel.webp",
+                "src": "https://i.ibb.co/s9PqDYX/sophie-Bluel.webp",
                 "alt": "Capture d'écran du site de Sophie Bluel"
             }
         ]
@@ -33,7 +33,7 @@
         "technos": ["jQuery", "Lighthouse", "Wave", "Rich Snippets", "Github"],
         "images": [
             {
-                "src": "../assets/ninaCarducci.webp",
+                "src": "https://i.ibb.co/RPg1wK9/nina-Carducci.webp",
                 "alt": "Capture d'écran du site de Nina Carducci"
             }
         ]
@@ -46,7 +46,7 @@
         "technos": ["React", "React Router", "Sass", "Node.js", "Github"],
         "images": [
             {
-                "src": "../assets/kasa.webp",
+                "src": "https://i.ibb.co/K2CNYwV/kasa.webp",
                 "alt": "Capture d'écran du site Kasa"
             }
         ]
@@ -66,7 +66,7 @@
         ],
         "images": [
             {
-                "src": "src/assets/monVieuxGrimoire.webp",
+                "src": "https://i.ibb.co/98476C8/mon-Vieux-Grimoire.webp",
                 "alt": "Capture d'écran du site Mon vieux grimoire"
             }
         ]
