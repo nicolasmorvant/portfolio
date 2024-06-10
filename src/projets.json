@@ -41,7 +41,7 @@
     {
         "id": 4,
         "title": "Kasa",
-        "desc": "Création d'une application web de location immobilière",
+        "desc": "Création d'une application web de locations immobilières",
         "link": "https://github.com/nicolasmorvant/projet5",
         "technos": ["React", "React Router", "Sass", "Node.js", "Github"],
         "images": [
