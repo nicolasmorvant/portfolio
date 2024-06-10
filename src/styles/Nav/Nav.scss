@@ -1,39 +1,33 @@
-@import "../Tool/variables";
-@import "../Tool/mixins";
+@import '../Tool/variables';
+@import '../Tool/mixins';
 
-.nav
-{
+.nav {
     margin: auto 0;
-    
-    @media(max-width: 1024px)
-    {
+
+    @media (max-width: 1024px) {
         margin: 0 auto;
     }
 
-    @media(max-width: 768px)
-    {
+    @media (max-width: 768px) {
         @include flexContainer(row, space-around, flex-start, wrap);
         width: 100%;
         flex: 0 1 25%;
         margin-top: 30px;
     }
 
-    &__list
-    {
+    &__list {
         @include flexContainer(column, space-between, flex-start, nowrap);
         height: 100%;
         row-gap: 30px;
 
-        @media(max-width: 1024px)
-        {
-            @include flexContainer(row,center,flex-start,wrap);
+        @media (max-width: 1024px) {
+            @include flexContainer(row, center, flex-start, wrap);
             width: 100%;
             height: auto;
             column-gap: 30px;
         }
 
-        @media(max-width: 768px)
-        {
+        @media (max-width: 768px) {
             @include flexContainer(column, flex-start, flex-start, nowrap);
             width: 50%;
             height: 100%;
@@ -41,25 +35,22 @@
         }
     }
 
-    &__item
-    {
+    &__item {
         position: relative;
     }
 
-    &__link
-    {
+    &__link {
         display: block;
         position: relative;
         width: 200px;
-        color: #FFFFFF;
+        color: #ffffff;
         padding: 15px 20px;
         border: 3px solid $lightblue;
         text-align: center;
         transition: transform 0.2s ease-in-out;
         transform-origin: left;
 
-        @media(max-width: 768px)
-        {
+        @media (max-width: 768px) {
             width: auto;
             border: none;
             color: $lightblue;
@@ -68,16 +59,14 @@
             font-size: 16px;
             padding: 10px 0px;
 
-            &:first-child
-            {
+            &:first-child {
                 padding-top: 0;
             }
         }
-    
+
         //LIGNE BLEUE
-        &::before
-        {
-            content: "";
+        &::before {
+            content: '';
             display: block;
             position: absolute;
             top: 5px;
@@ -86,45 +75,37 @@
             border: 1px solid $lightblue;
             margin-bottom: 10px;
 
-            @media(max-width: 768px)
-            {
-                display: none;   
+            @media (max-width: 768px) {
+                display: none;
             }
         }
 
-        &:hover
-        {
+        &:hover {
             transform: scaleX(1.1);
             color: $lightblue;
 
-            @media(max-width: 768px)
-            {
+            @media (max-width: 768px) {
                 color: $coolorange;
                 transform: none;
             }
         }
 
-        &:hover ~ .squares
-        {
+        &:hover ~ .squares {
             transform: scaleX(1.1) translateX(10px);
         }
     }
 
-    &__social
-    {
+    &__social {
         display: none;
 
-        @media(max-width: 768px)
-        {
+        @media (max-width: 768px) {
             @include flexContainer(row, space-between, center, wrap);
             gap: 15px;
 
-            i
-            {
+            i {
                 font-size: 25px;
 
-                &:hover
-                {
+                &:hover {
                     color: $lightblue;
                 }
             }
@@ -132,10 +113,8 @@
     }
 }
 
-@media(max-width: 768px)
-{
-  .miroir
-  { 
-      transform: translateX(180deg);
-  }
+@media (max-width: 768px) {
+    .miroir {
+        transform: translateX(180deg);
+    }
 }

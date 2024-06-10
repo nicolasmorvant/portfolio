@@ -1,68 +1,56 @@
 @import '../Tool/mixins';
 @import '../Tool/variables';
 
-.contact
-{
-    @include flexContainer(column,center,center,nowrap);
+.contact {
+    @include flexContainer(column, center, center, nowrap);
     row-gap: 20px;
     width: 100%;
 
-    @media(max-width: 576px)
-    {
+    @media (max-width: 576px) {
         margin-top: 50px;
     }
 
-    &__title
-    {
-        &--lightblue
-        {
+    &__title {
+        &--lightblue {
             color: $lightblue;
         }
     }
 
-    &__mail__and__phone i
-    {
+    &__mail__and__phone i {
         margin-right: 20px;
     }
 
-    &__mail
-    {
+    &__mail {
         margin-bottom: 20px;
     }
 
-    &__social
-    {
-        @include flexContainer(row,center,center,nowrap);
+    &__social {
+        @include flexContainer(row, center, center, nowrap);
         column-gap: 20px;
         text-align: center;
         width: 100%;
 
-        @media(max-width: 768px)
-        {
+        @media (max-width: 768px) {
             display: none;
         }
 
-        i
-        {
+        i {
             color: white;
             font-size: 25px;
-        
-            &:hover
-            {
+
+            &:hover {
                 color: $lightblue;
             }
         }
     }
 
-    .loader__container
-    {
+    .loader__container {
         display: none;
 
-        @media(max-width: 768px) 
-        {
+        @media (max-width: 768px) {
             display: block;
             margin-top: 100px;
-            height: 200px; 
+            height: 200px;
         }
     }
 }

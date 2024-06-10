@@ -1,10 +1,12 @@
-.cube__container, .cube {
+.cube__container,
+.cube {
   width: 400px;
   height: 400px;
   transform-style: preserve-3d;
 }
 @media (max-width: 768px) {
-  .cube__container, .cube {
+  .cube__container,
+  .cube {
     width: 100%;
     height: auto;
     transform-style: initial;

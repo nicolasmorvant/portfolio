@@ -2,8 +2,7 @@
 @import '../Tool/variables';
 
 //DÉCORATION DESSOUS
-.squares
-{
+.squares {
     position: absolute;
     bottom: -5px;
     left: 9px;
@@ -12,13 +11,11 @@
     justify-content: space-between;
     transition: transform 0.2s ease-in-out;
 
-    @media(max-width: 768px)
-    {
-        display: none;   
+    @media (max-width: 768px) {
+        display: none;
     }
 
-    &__item
-    {
+    &__item {
         background-color: $lightblue;
         width: 5px;
         height: 5px;

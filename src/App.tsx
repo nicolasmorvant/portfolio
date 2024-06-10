@@ -5,47 +5,37 @@ import Cube from './components/Cube.tsx';
 import './styles/App/App.css';
 
 const App: React.FC = () => {
-  
-  //SIMULATION CHARGEMENT DE DONNÉES
-  const [loading, setLoading] = useState(true);
+    //SIMULATION CHARGEMENT DE DONNÉES
+    const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000);
 
-      setLoading(false);
-    
-    }, 2000);
+        return () => clearTimeout(timer);
+    }, []);
 
-    return () => clearTimeout(timer);
-  }, []);
+    useEffect(() => {
+        if (!loading) {
+            const main = document.querySelector('.main-container');
 
+            main?.classList.add('loaded');
+        }
+    }, [loading]);
 
-  useEffect( () => {
-
-    if(!loading)
-    {
-      const main = document.querySelector(".main-container");
-
-      main?.classList.add("loaded");
-    }
-
-  }, [loading])
-
-  return (
-    
-    <>
-      {loading ? (
-        <Loader />
-      ) : (
-
-        <div className='main-container'>
-          <Nav />
-          <Cube/>      
-        </div>
-
-      )}
-    </> 
-  );
+    return (
+        <>
+            {loading ? (
+                <Loader />
+            ) : (
+                <div className="main-container">
+                    <Nav />
+                    <Cube />
+                </div>
+            )}
+        </>
+    );
 };
 
 export default App;

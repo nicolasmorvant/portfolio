@@ -1,103 +1,102 @@
 [
-  {
-    "slug": "react",
-    "hexa": "#61DAFB",
-    "title": "React"
-  },
-  {
-    "slug": "reactrouter",
-    "hexa": "#CA4245",
-    "title": "React Router"
-  },
-  {
-    "slug": "sass",
-    "hexa": "#CC6699",
-    "title": "Sass"
-  },
-  {
-    "slug": "typescript",
-    "hexa": "#3178C6",
-    "title": "Typescript"
-  },
-  {
-    "slug": "bootstrap",
-    "hexa": "#7952B3",
-    "title": "Bootstrap"
-  },
-  {
-    "slug": "jquery",
-    "hexa": "#0769AD",
-    "title": "jQuery"
-  },
-  {
-    "slug": "vite",
-    "hexa": "#646CFF",
-    "title": "Vite.js"
-  },
-  {
-    "slug": "nodedotjs",
-    "hexa": "#5FA04E",
-    "title": "Node.js"
-  },
-  {
-    "slug": "express",
-    "hexa": "#000000",
-    "title": "Express.js"
-  },
-  {
-    "slug": "mongodb",
-    "hexa": "#47A248",
-    "title": "MongoDB"
-  },
-  {
-    "slug": "php",
-    "hexa": "#777BB4",
-    "title": "PHP"
-  },
-  {
-    "slug": "mysql",
-    "hexa": "#4479A1",
-    "title": "MySql"
-  },
-  {
-    "slug": "symfony",
-    "hexa": "#000000",
-    "title": "Symfony"
-  },
-  {
-    "slug": "github",
-    "hexa": "#181717",
-    "title": "Github"
-  },
-  {
-    "slug": "postman",
-    "hexa": "#FF6C37",
-    "title": "Postman"
-  },
-  {
-    "slug": "swagger",
-    "hexa": "#85EA2D",
-    "title": "Swagger"
-  },
-  {
-    "slug": "docker",
-    "hexa": "#2496ED",
-    "title": "Docker"
-  },
-  {
-    "slug": "lighthouse",
-    "hexa": "#F44B21",
-    "title": "Lighthouse"
-  },
-  {
-    "slug": "ubuntu",
-    "hexa": "#E95420",
-    "title": "Ubuntu"
-  },
-  {
-    "slug": "xfce",
-    "hexa": "#2284F2",
-    "title": "Xfce"
-  }
+    {
+        "slug": "react",
+        "hexa": "#61DAFB",
+        "title": "React"
+    },
+    {
+        "slug": "reactrouter",
+        "hexa": "#CA4245",
+        "title": "React Router"
+    },
+    {
+        "slug": "sass",
+        "hexa": "#CC6699",
+        "title": "Sass"
+    },
+    {
+        "slug": "typescript",
+        "hexa": "#3178C6",
+        "title": "Typescript"
+    },
+    {
+        "slug": "bootstrap",
+        "hexa": "#7952B3",
+        "title": "Bootstrap"
+    },
+    {
+        "slug": "jquery",
+        "hexa": "#0769AD",
+        "title": "jQuery"
+    },
+    {
+        "slug": "vite",
+        "hexa": "#646CFF",
+        "title": "Vite.js"
+    },
+    {
+        "slug": "nodedotjs",
+        "hexa": "#5FA04E",
+        "title": "Node.js"
+    },
+    {
+        "slug": "express",
+        "hexa": "#000000",
+        "title": "Express.js"
+    },
+    {
+        "slug": "mongodb",
+        "hexa": "#47A248",
+        "title": "MongoDB"
+    },
+    {
+        "slug": "php",
+        "hexa": "#777BB4",
+        "title": "PHP"
+    },
+    {
+        "slug": "mysql",
+        "hexa": "#4479A1",
+        "title": "MySql"
+    },
+    {
+        "slug": "symfony",
+        "hexa": "#000000",
+        "title": "Symfony"
+    },
+    {
+        "slug": "github",
+        "hexa": "#181717",
+        "title": "Github"
+    },
+    {
+        "slug": "postman",
+        "hexa": "#FF6C37",
+        "title": "Postman"
+    },
+    {
+        "slug": "swagger",
+        "hexa": "#85EA2D",
+        "title": "Swagger"
+    },
+    {
+        "slug": "docker",
+        "hexa": "#2496ED",
+        "title": "Docker"
+    },
+    {
+        "slug": "lighthouse",
+        "hexa": "#F44B21",
+        "title": "Lighthouse"
+    },
+    {
+        "slug": "ubuntu",
+        "hexa": "#E95420",
+        "title": "Ubuntu"
+    },
+    {
+        "slug": "xfce",
+        "hexa": "#2284F2",
+        "title": "Xfce"
+    }
 ]
-  

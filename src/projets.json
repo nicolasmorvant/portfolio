@@ -1,78 +1,74 @@
 [
-  {
-    "id": 1,
-    "title": "Booki",
-    "desc": "Création de la page d'accueil d'une agence de voyage",
-    "link": "https://nicolasmorvant.github.io/projet2/",
-    "technos": [
-      "HTML", "CSS", "Github"
-    ], 
-    "images": [
-      {
-        "src": "src/assets/projets/booki/booki.webp",
-        "alt": "Capture d'écran du site Booki"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Sophie Bluel",
-    "desc": "API de gestion de photos",
-    "link": "https://github.com/nicolasmorvant/projet3",
-    "technos": [
-      "Javascript", "Node.js", "Swagger", "Postman", "Github"
-    ], 
-    "images": [
-      {
-        "src": "src/assets/projets/sophieBluel/sophieBluel.webp",
-        "alt": "Capture d'écran du site de Sophie Bluel"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Nina Carducci",
-    "desc": "Optimisation SEO & Debug",
-    "link": "https://nicolasmorvant.github.io/projet4/",
-    "technos": [
-      "jQuery", "Lighthouse", "Wave", "Rich Snippets", "Github"
-    ], 
-    "images": [
-      {
-        "src": "src/assets/projets/ninaCarducci/ninaCarducci.webp",
-        "alt": "Capture d'écran du site de Nina Carducci"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Kasa",
-    "desc": "Création d'une application web de location immobilière",
-    "link": "https://github.com/nicolasmorvant/projet5",
-    "technos": [
-      "React", "React Router", "Sass", "Node.js", "Github"
-    ], 
-    "images": [
-      {
-        "src": "src/assets/projets/kasa/kasa.webp",
-        "alt": "Capture d'écran du site Kasa"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Mon vieux grimoire",
-    "desc": "Développement du backend d'un site de notation de livres",
-    "link": "https://github.com/nicolasmorvant/projet6",
-    "technos": [
-      "React", "Node.js", "Express", "MongoDB", "Postman", "Github"
-    ], 
-    "images": [
-      {
-        "src": "src/assets/projets/monVieuxGrimoire/monVieuxGrimoire.webp",
-        "alt":"Capture d'écran du site Mon vieux grimoire"
-      }
-    ]
-  }
+    {
+        "id": 1,
+        "title": "Booki",
+        "desc": "Création de la page d'accueil d'une agence de voyage",
+        "link": "https://nicolasmorvant.github.io/projet2/",
+        "technos": ["HTML", "CSS", "Github"],
+        "images": [
+            {
+                "src": "src/assets/projets/booki/booki.webp",
+                "alt": "Capture d'écran du site Booki"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Sophie Bluel",
+        "desc": "API de gestion de photos",
+        "link": "https://github.com/nicolasmorvant/projet3",
+        "technos": ["Javascript", "Node.js", "Swagger", "Postman", "Github"],
+        "images": [
+            {
+                "src": "src/assets/projets/sophieBluel/sophieBluel.webp",
+                "alt": "Capture d'écran du site de Sophie Bluel"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Nina Carducci",
+        "desc": "Optimisation SEO & Debug",
+        "link": "https://nicolasmorvant.github.io/projet4/",
+        "technos": ["jQuery", "Lighthouse", "Wave", "Rich Snippets", "Github"],
+        "images": [
+            {
+                "src": "src/assets/projets/ninaCarducci/ninaCarducci.webp",
+                "alt": "Capture d'écran du site de Nina Carducci"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Kasa",
+        "desc": "Création d'une application web de location immobilière",
+        "link": "https://github.com/nicolasmorvant/projet5",
+        "technos": ["React", "React Router", "Sass", "Node.js", "Github"],
+        "images": [
+            {
+                "src": "src/assets/projets/kasa/kasa.webp",
+                "alt": "Capture d'écran du site Kasa"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Mon vieux grimoire",
+        "desc": "Développement du backend d'un site de notation de livres",
+        "link": "https://github.com/nicolasmorvant/projet6",
+        "technos": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Postman",
+            "Github"
+        ],
+        "images": [
+            {
+                "src": "src/assets/projets/monVieuxGrimoire/monVieuxGrimoire.webp",
+                "alt": "Capture d'écran du site Mon vieux grimoire"
+            }
+        ]
+    }
 ]
-  

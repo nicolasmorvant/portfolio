@@ -1,45 +1,36 @@
 @import '../Tool/mixins';
 @import '../Tool/variables';
 
-.technologie
-{
+.technologie {
     @include flexContainer(column, center, center, nowrap);
     row-gap: 20px;
     width: 100%;
 
-    @media(max-width: 576px)
-    {
+    @media (max-width: 576px) {
         margin-top: 50px;
     }
-   
 
-    &__title
-    {
+    &__title {
         flex: 0 1 10%;
 
-        &--lightblue
-        {
+        &--lightblue {
             color: $lightblue;
         }
 
-        @media(max-width: 576px)
-        {
+        @media (max-width: 576px) {
             margin-bottom: 20px;
         }
     }
 
-    &__desc
-    {
+    &__desc {
         @include flexContainer(row, center, center, wrap);
         row-gap: 10px;
         column-gap: 10px;
 
-        &__img
-        {
+        &__img {
             filter: invert(100%);
 
-            &:hover
-            {
+            &:hover {
                 animation: rotation 0.8s ease-in;
             }
         }
@@ -50,13 +41,13 @@
     0% {
         transform: rotateX(0deg);
     }
-    33%{
+    33% {
         transform: rotateX(90deg);
     }
-    50%{
+    50% {
         transform: rotateX(180deg);
     }
-    66%{
+    66% {
         transform: rotateX(270deg);
     }
     100% {

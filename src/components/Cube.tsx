@@ -8,12 +8,10 @@ import Realisation from './Realisation.tsx';
 import Contact from './Contact.tsx';
 import '../styles/Cube/Cube.css';
 
-
 const Cube: React.FC = () => {
     return (
         <main className="cube__container">
             <div className="cube rotation--front">
-
                 {/*INTRO*/}
                 <div className="cube__side cube__side--front">
                     <Header />
@@ -54,4 +52,4 @@ const Cube: React.FC = () => {
     );
 };
 
-export default Cube
+export default Cube;

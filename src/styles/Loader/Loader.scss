@@ -1,15 +1,12 @@
 @import '../Tool/variables';
 
-.loader
-{
-
-    &__container, &__cube
-    {
+.loader {
+    &__container,
+    &__cube {
         transform-style: preserve-3d;
     }
 
-    &__container
-    {
+    &__container {
         position: relative;
         display: flex;
         justify-content: center;
@@ -17,57 +14,51 @@
         height: 100vh;
     }
 
-    &__cube 
-    {
+    &__cube {
         width: 100px;
         height: 100px;
         position: relative;
         animation: spin 3s infinite linear;
     }
 
-    &__side 
-    {
+    &__side {
         position: absolute;
         width: 100px;
         height: 100px;
         border: 3px solid #fff;
         box-sizing: border-box;
-    
-        &--front 
-        {
+
+        &--front {
             transform: translateZ(50px);
         }
 
-        &--back 
-        {
+        &--back {
             transform: rotateY(180deg) translateZ(50px);
         }
-        
-        &--left 
-        {
+
+        &--left {
             transform: rotateY(-90deg) translateZ(50px);
         }
-        
-        &--right 
-        {
-            
+
+        &--right {
             transform: rotateY(90deg) translateZ(50px);
         }
 
-        &--top 
-        {
+        &--top {
             transform: rotateX(90deg) translateZ(50px);
         }
-        
-        &--bottom 
-        {
+
+        &--bottom {
             transform: rotateX(-90deg) translateZ(50px);
         }
     }
-} 
+}
 
-@keyframes spin 
-{
-    0% { transform: rotateX(0deg) rotateY(0deg); }
-    100% { transform: rotateX(360deg) rotateY(360deg); }
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
 }

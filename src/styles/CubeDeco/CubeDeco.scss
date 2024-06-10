@@ -1,8 +1,7 @@
 @import '../Tool/mixins';
 @import '../Tool/variables';
 
-.dashed
-{
+.dashed {
     display: block;
     height: 10px;
     position: absolute;
@@ -13,13 +12,11 @@
     column-gap: 5px;
     z-index: 999;
 
-    @media(max-width: 768px)
-    {
-        display: none;        
+    @media (max-width: 768px) {
+        display: none;
     }
-    
-    &__part
-    {
+
+    &__part {
         height: 100%;
         width: 5px;
         background-color: $lightblue;
@@ -27,8 +24,7 @@
     }
 }
 
-.cube__squares
-{
+.cube__squares {
     display: block;
     height: 12px;
     position: absolute;
@@ -41,46 +37,40 @@
     display: flex;
     justify-content: space-between;
 
-    @media(max-width: 768px)
-    {
-        display: none;            
-    }    
+    @media (max-width: 768px) {
+        display: none;
+    }
 
-    &__item 
-    {
+    &__item {
         height: 9px;
         width: 8px;
         background-color: $lightblue;
         border: 1px solid $lightblue;
 
-        &:nth-child(odd) 
-        {
+        &:nth-child(odd) {
             animation: changerCouleurImpair 2s infinite alternate;
         }
 
-        &:nth-child(even) 
-        {
+        &:nth-child(even) {
             animation: changerCouleurPair 2s infinite alternate;
         }
     }
-}        
-    
-@keyframes changerCouleurImpair 
-{
-    0%{
+}
+
+@keyframes changerCouleurImpair {
+    0% {
         background-color: $lightblue;
     }
-    100%{
+    100% {
         background-color: transparent;
     }
 }
 
-@keyframes changerCouleurPair
-{
-    0%{
+@keyframes changerCouleurPair {
+    0% {
         background-color: transparent;
     }
-    100%{
+    100% {
         background-color: $lightblue;
     }
-}    
+}
