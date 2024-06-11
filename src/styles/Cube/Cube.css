@@ -43,7 +43,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  border: 10px double #36B8FF;
+  border: 10px double #36b8ff;
   padding: 0 20px 0;
   opacity: 1;
   will-change: transform;
@@ -110,7 +110,7 @@
   position: absolute;
   top: -19px;
   left: -19px;
-  background-color: #36B8FF;
+  background-color: #36b8ff;
   width: 200px;
   height: 10px;
   clip-path: polygon(0 0, 97% 0, 100% 100%, 0% 100%);
@@ -126,7 +126,7 @@
   position: absolute;
   top: -10px;
   left: -19px;
-  background-color: #36B8FF;
+  background-color: #36b8ff;
   width: 10px;
   height: 100px;
   clip-path: polygon(0px 0px, 100% 0px, 100% 90%, 100% 90%, 16px 103.67%, 0% 89.27%);
@@ -144,7 +144,7 @@
 
 @media (min-width: 768px) {
   .opaque {
-    opacity: 0.2;
+    opacity: 0.1;
   }
 }
 @media (max-width: 767.98px) {
@@ -153,7 +153,7 @@
   }
 }
 @media (min-width: 768px) {
-  .rotation--front {
+  s .rotation--front {
     transform: rotateX(0deg) rotateY(0deg);
   }
 }

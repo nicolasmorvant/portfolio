@@ -158,7 +158,7 @@ $cubeDesktop: 400px;
 //OPACITÉ DES FACES INACTIVES
 @media (min-width: 768px) {
     .opaque {
-        opacity: 0.2;
+        opacity: 0.1;
     }
 }
 
@@ -166,7 +166,7 @@ $cubeDesktop: 400px;
     .opaque {
         display: none;
     }
-}
+}s
 
 .rotation--front {
     @media (min-width: 768px) {

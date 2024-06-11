@@ -16,13 +16,14 @@
   margin-bottom: 20px;
 }
 .realisation__title--lightblue {
-  color: #36B8FF;
+  color: #36b8ff;
 }
 .realisation__desc {
   height: 70%;
   width: 100%;
   background-color: transparent;
-  border: 2px solid #36B8FF;
+  font-weight: bold;
+  border: 2px solid #36b8ff;
   border-radius: 1px;
   overflow: hidden;
   transition: border-color 1s ease-in-out;
@@ -121,7 +122,7 @@
   right: 0;
   left: 0;
   height: calc(50% - 5px);
-  border: 1px solid #36B8FF;
+  border: 1px solid #36b8ff;
   transition: all 0.15s ease;
 }
 .realisation__desc .projet__link__button::before {
@@ -182,7 +183,7 @@
   bottom: -1px;
   left: -8px;
   width: 0;
-  background-color: #FF9536;
+  background-color: #ff9536;
   transform: skew(-15deg);
   transition: all 0.2s ease;
 }
@@ -228,7 +229,7 @@
 
 .fa-solid:hover {
   cursor: pointer;
-  color: #FF9536;
+  color: #ff9536;
 }
 
 /*# sourceMappingURL=Realisation.css.map */

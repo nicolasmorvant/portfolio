@@ -92,86 +92,70 @@ const Nav: React.FC = () => {
         }
     };
 
-    //FONCTION POUR LA NAV MOBILE
-    const toggleNav = () => 
-    {
-        const navList = document.querySelector(".nav__list");
-        const navToggleIcons = document.querySelector(".nav__toggle__icons");
-    
-        navList?.classList.toggle("nav__list--visible");
-        navToggleIcons?.classList.toggle("open");
-    };
-
     return (
         <nav className="nav">
-            <div className="nav__toggle">
-                <div className="nav__toggle__icons">
-                    <i className="fa-solid fa-bars nav__toggle__icons--close visible" onClick={toggleNav}></i>
-                    <i className="fa-solid fa-xmark nav__toggle__icons--open" onClick={toggleNav}></i>
-                </div>
-                <ul className="nav__list">
-                    <li className="nav__item">
-                        <a
-                            href="#intro"
-                            className={`nav__link ${active === 'intro' ? 'active' : ''}`}
-                            onClick={e => handleClick(e, 0, 'intro')}
-                        >
-                            Intro
-                        </a>
-                        <Squares />
-                    </li>
-                    <li className="nav__item">
-                        <a
-                            href="#formation"
-                            className={`nav__link ${active === 'formation' ? 'active' : ''}`}
-                            onClick={e => handleClick(e, 1, 'formation')}
-                        >
-                            Formation
-                        </a>
-                        <Squares />
-                    </li>
-                    <li className="nav__item">
-                        <a
-                            href="#services"
-                            className={`nav__link ${active === 'services' ? 'active' : ''}`}
-                            onClick={e => handleClick(e, 2, 'services')}
-                        >
-                            Services
-                        </a>
-                        <Squares />
-                    </li>
-                    <li className="nav__item">
-                        <a
-                            href="#technologies"
-                            className={`nav__link ${active === 'technologies' ? 'active' : ''}`}
-                            onClick={e => handleClick(e, 3, 'technologies')}
-                        >
-                            Technologies
-                        </a>
-                        <Squares />
-                    </li>
-                    <li className="nav__item">
-                        <a
-                            href="#realisations"
-                            className={`nav__link ${active === 'realisations' ? 'active' : ''}`}
-                            onClick={e => handleClick(e, 4, 'realisations')}
-                        >
-                            Réalisations
-                        </a>
-                        <Squares />
-                    </li>
-                    <li className="nav__item">
-                        <a
-                            href="#contact"
-                            className={`nav__link ${active === 'contact' ? 'active' : ''}`}
-                            onClick={e => handleClick(e, 5, 'contact')}
-                        >
-                            Contact
-                        </a>
-                        <Squares />
-                    </li>
-                </ul>
-            </div>
+            <ul className="nav__list">
+                <li className="nav__item">
+                    <a
+                        href="#intro"
+                        className={`nav__link ${active === 'intro' ? 'active' : ''}`}
+                        onClick={e => handleClick(e, 0, 'intro')}
+                    >
+                        Intro
+                    </a>
+                    <Squares />
+                </li>
+                <li className="nav__item">
+                    <a
+                        href="#formation"
+                        className={`nav__link ${active === 'formation' ? 'active' : ''}`}
+                        onClick={e => handleClick(e, 1, 'formation')}
+                    >
+                        Formation
+                    </a>
+                    <Squares />
+                </li>
+                <li className="nav__item">
+                    <a
+                        href="#services"
+                        className={`nav__link ${active === 'services' ? 'active' : ''}`}
+                        onClick={e => handleClick(e, 2, 'services')}
+                    >
+                        Services
+                    </a>
+                    <Squares />
+                </li>
+                <li className="nav__item">
+                    <a
+                        href="#technologies"
+                        className={`nav__link ${active === 'technologies' ? 'active' : ''}`}
+                        onClick={e => handleClick(e, 3, 'technologies')}
+                    >
+                        Technologies
+                    </a>
+                    <Squares />
+                </li>
+                <li className="nav__item">
+                    <a
+                        href="#realisations"
+                        className={`nav__link ${active === 'realisations' ? 'active' : ''}`}
+                        onClick={e => handleClick(e, 4, 'realisations')}
+                    >
+                        Réalisations
+                    </a>
+                    <Squares />
+                </li>
+                <li className="nav__item">
+                    <a
+                        href="#contact"
+                        className={`nav__link ${active === 'contact' ? 'active' : ''}`}
+                        onClick={e => handleClick(e, 5, 'contact')}
+                    >
+                        Contact
+                    </a>
+                    <Squares />
+                </li>
+            </ul>
             <div className="nav__social">
                 <a
                     href="https://www.linkedin.com/in/nicolas-morvant/"

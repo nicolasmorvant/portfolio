@@ -16,10 +16,10 @@
   margin-bottom: 20px;
 }
 .services__title--lightblue {
-  color: #36B8FF;
+  color: #36b8ff;
 }
 .services__item__title {
-  color: #FF9536;
+  color: #ff9536;
 }
 @media (max-width: 576px) {
   .services__item__title {
@@ -29,6 +29,7 @@
 .services__item__text {
   margin-top: 10px;
   font-size: 12px;
+  font-weight: bold;
   padding-left: 20px;
 }
 @media (max-width: 576px) {

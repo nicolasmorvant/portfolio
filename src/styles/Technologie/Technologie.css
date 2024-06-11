@@ -1,60 +1,61 @@
 .technologie {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    row-gap: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 20px;
+  width: 100%;
 }
 @media (max-width: 576px) {
-    .technologie {
-        margin-top: 50px;
-    }
+  .technologie {
+    margin-top: 50px;
+  }
 }
 .technologie__title {
-    flex: 0 1 10%;
+  flex: 0 1 10%;
 }
 .technologie__title--lightblue {
-    color: #36b8ff;
+  color: #36b8ff;
 }
 @media (max-width: 576px) {
-    .technologie__title {
-        margin-bottom: 20px;
-    }
+  .technologie__title {
+    margin-bottom: 20px;
+  }
 }
 .technologie__desc {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  font-weight: bold;
 }
 .technologie__desc__img {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 .technologie__desc__img:hover {
-    animation: rotation 0.8s ease-in;
+  animation: rotation 0.8s ease-in;
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotateX(0deg);
-    }
-    33% {
-        transform: rotateX(90deg);
-    }
-    50% {
-        transform: rotateX(180deg);
-    }
-    66% {
-        transform: rotateX(270deg);
-    }
-    100% {
-        transform: rotateX(360deg);
-    }
+  0% {
+    transform: rotateX(0deg);
+  }
+  33% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  66% {
+    transform: rotateX(270deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
 }
 
 /*# sourceMappingURL=Technologie.css.map */
