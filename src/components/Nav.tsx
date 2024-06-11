@@ -71,7 +71,8 @@ const Nav: React.FC = () => {
 
         mainContainer?.classList.toggle('tourne');
         cubeContainer?.classList.toggle('miroir');
-        document.body.classList.toggle('backgroundChange');
+        document.body.classList.remove('backgroundChange');
+        document.body.classList.add('backgroundChange');
     };
 
     // FONCTION POUR LE PREVENT DEFAULT
