@@ -1,24 +1,29 @@
 @import '../Tool/mixins';
 @import '../Tool/variables';
 
-.realisation {
+.realisation 
+{
     @include flexContainer(column, center, center, nowrap);
     row-gap: 20px;
     width: 100%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 768px) 
+    {
         margin-top: 50px;
     }
 
-    &__title {
+    &__title 
+    {
         margin-bottom: 20px;
 
-        &--lightblue {
+        &--lightblue 
+        {
             color: $lightblue;
         }
     }
 
-    &__desc {
+    &__desc 
+    {
         height: 70%;
         width: 100%;
         background-color: transparent;
@@ -28,39 +33,43 @@
         overflow: hidden;
         transition: border-color 1s ease-in-out;
 
-        @media (max-width: 768px) {
+        @media (max-width: 768px) 
+        {
             height: 300px;
             max-height: 300px;
             border: none;
         }
 
-        .projet {
+        .projet 
+        {
+            @include fullSize;
             position: relative;
-            width: 100%;
-            height: 100%;
             display: none;
 
-            &__navigation {
+            &__navigation 
+            {
+                @include fullSize;
                 position: absolute;
-                width: 100%;
-                height: 100%;
                 z-index: 3;
                 font-size: 20px;
 
-                &--left {
+                &--left 
+                {
                     position: absolute;
                     top: 48%;
                     left: 20px;
                 }
 
-                &--right {
+                &--right 
+                {
                     position: absolute;
                     top: 48%;
                     right: 20px;
                 }
             }
 
-            &__title {
+            &__title 
+            {
                 text-align: center;
                 color: white;
                 font-size: 16px;
@@ -68,7 +77,8 @@
                 transition: opacity 1s ease-in-out;
             }
 
-            &__desc {
+            &__desc 
+            {
                 margin-top: 15px;
                 text-align: center;
                 font-size: 14px;
@@ -76,35 +86,35 @@
                 transition: opacity 1s ease-in-out;
             }
 
-            &__img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            &__img 
+            {
+                @include absoluteTopLeft;
+                @include fullSize;
                 opacity: 1;
                 transition: opacity 1s ease-in-out;
 
-                @media (max-width: 768px) {
+                @media(max-width: 768px) 
+                {
                     object-fit: contain;
                 }
             }
 
-            &__link {
+            &__link
+            {
+                @include flexContainer(row,center,center,nowrap);
                 margin-top: 25px;
                 position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 opacity: 0;
                 transition: opacity 1s ease-in-out;
 
-                @media (max-width: 768px) {
+                @media (max-width: 768px) 
+                {
                     width: 150px;
                     margin: 25px auto;
                 }
 
-                &__button {
+                &__button 
+                {
                     z-index: 999;
                     cursor: pointer;
                     position: relative;
@@ -118,8 +128,8 @@
                     padding: 5px 10px;
                     transition: all 0.15s ease;
 
-                    &::before,
-                    &::after {
+                    &::before, &::after 
+                    {
                         content: '';
                         display: block;
                         position: absolute;
@@ -130,36 +140,41 @@
                         transition: all 0.15s ease;
                     }
 
-                    &::before {
+                    &::before 
+                    {
                         top: 0;
                         border-bottom-width: 0;
                     }
 
-                    &::after {
+                    &::after 
+                    {
                         bottom: 0;
                         border-top-width: 0;
                     }
 
-                    &:active,
-                    &:focus {
+                    &:active, &:focus 
+                    {
                         outline: none;
                     }
 
-                    &:active::before,
-                    &:active::after {
+                    &:active::before, &:active::after 
+                    {
                         right: 3px;
                         left: 3px;
                     }
 
-                    &:active::before {
+                    &:active::before 
+                    {
                         top: 3px;
                     }
 
-                    &:active::after {
+                    &:active::after 
+                    {
                         bottom: 3px;
                     }
 
-                    &--lg {
+                    &--lg 
+                    {
                         position: relative;
                         display: block;
                         padding: 10px 20px;
@@ -169,7 +184,8 @@
                         box-shadow: inset 0px 0px 0px 1px transparent;
                     }
 
-                    &--lg::before {
+                    &--lg::before 
+                    {
                         content: '';
                         display: block;
                         position: absolute;
@@ -180,7 +196,8 @@
                         background-color: transparent;
                     }
 
-                    &--lg::after {
+                    &--lg::after 
+                    {
                         content: '';
                         display: block;
                         position: absolute;
@@ -192,7 +209,8 @@
                         transition: all 0.2s ease;
                     }
 
-                    &--sl {
+                    &--sl 
+                    {
                         display: block;
                         position: absolute;
                         top: 0;
@@ -204,53 +222,56 @@
                         transition: all 0.2s ease;
                     }
 
-                    &--text {
+                    &--text 
+                    {
                         position: relative;
                     }
 
-                    &:hover {
+                    &:hover 
+                    {
                         cursor: pointer;
                     }
 
-                    &:hover .projet__link__button--sl {
+                    &:hover .projet__link__button--sl 
+                    {
                         width: calc(100% + 15px);
                     }
 
-                    &:hover .projet__link__button--lg::after {
+                    &:hover .projet__link__button--lg::after 
+                    {
                         background-color: white;
                     }
                 }
             }
 
-            &:hover .projet__img {
+            &:hover .projet__img 
+            {
                 opacity: 0;
             }
 
-            &:hover .projet__title,
-            &:hover .projet__desc,
-            &:hover .projet__link,
-            &:hover .tag {
+            &:hover .projet__title, &:hover .projet__desc, &:hover .projet__link, &:hover .tag 
+            {
                 opacity: 1;
             }
 
-            &__tags {
+            &__tags 
+            {
+                @include flexContainer(row,center,center,wrap);
                 margin-top: 15px;
                 width: 100%;
                 padding: 0 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
                 gap: 5px;
             }
 
-            .tag {
+            .tag 
+            {
                 border-radius: 10px;
                 opacity: 0;
                 transition: opacity 1s ease-in-out;
             }
 
-            &--active {
+            &--active 
+            {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -258,12 +279,14 @@
             }
         }
     }
-}
 
-//NAVIGATION
-.fa-solid {
-    &:hover {
-        cursor: pointer;
-        color: $coolorange;
+    //NAVIGATION
+    .fa-solid 
+    {
+        &:hover 
+        {
+            cursor: pointer;
+            color: $coolorange;
+        }
     }
 }

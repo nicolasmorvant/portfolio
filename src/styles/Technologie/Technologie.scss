@@ -8,7 +8,7 @@
     width: 100%;
     padding: 20px 0;
 
-    @media (max-width: 576px) 
+    @media(max-width: 576px) 
     {
         margin-top: 50px;
     }
@@ -17,11 +17,12 @@
     {
         flex: 0 1 10%;
 
-        &--lightblue {
+        &--lightblue 
+        {
             color: $lightblue;
         }
 
-        @media (max-width: 576px) 
+        @media(max-width: 576px) 
         {
             margin-bottom: 20px;
         }

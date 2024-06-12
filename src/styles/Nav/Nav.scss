@@ -43,7 +43,7 @@
             }
         }
 
-        @media (max-width: 767.98px) 
+        @media (max-width: 768px) 
         {
             @include flexContainer(column, flex-start, flex-start, nowrap);
             visibility: hidden;
@@ -191,6 +191,11 @@
                     }
                 }
             }
+        }
+
+        span
+        {
+            display: none;
         }
 }
 

@@ -29,19 +29,13 @@
         margin-bottom: 20px;
     }
 
-    &__social 
-    {
+    &__social {
         @include flexContainer(row, center, center, nowrap);
         column-gap: 20px;
         text-align: center;
         width: 100%;
 
         @media (max-width: 768px) {
-            display: none;
-        }
-
-        span
-        {
             display: none;
         }
 

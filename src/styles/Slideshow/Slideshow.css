@@ -74,6 +74,10 @@
   animation-name: rotation;
   animation-duration: 0.8s;
 }
+.slideshow i:hover {
+  color: #ff9536;
+  cursor: pointer;
+}
 
 @keyframes rotation {
   0% {

@@ -1,4 +1,5 @@
 @import '../Tool/variables';
+@import '../Tool/mixins';
 
 .loader {
     &__container,
@@ -7,24 +8,20 @@
     }
 
     &__container {
+        @include flexContainer(row,center,center,nowrap);
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 100vh;
     }
 
     &__cube {
-        width: 100px;
-        height: 100px;
+        @include size100;
         position: relative;
         animation: spin 3s infinite linear;
     }
 
     &__side {
         position: absolute;
-        width: 100px;
-        height: 100px;
+        @include size100;
         border: 3px solid #fff;
         box-sizing: border-box;
 

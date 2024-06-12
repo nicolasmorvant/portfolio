@@ -131,6 +131,7 @@ const Nav: React.FC = () => {
                     className="nav__linkedin"
                     target="_blank"
                 >
+                    <span>Linkedin</span>
                     <i className="fa-brands fa-linkedin" title="Linkedin"></i>
                 </a>
                 <a
@@ -138,6 +139,7 @@ const Nav: React.FC = () => {
                     className="nav__discord"
                     target="_blank"
                 >
+                    <span>Discord</span>
                     <i className="fa-brands fa-discord" title="Discord"></i>
                 </a>
                 <a
@@ -145,6 +147,7 @@ const Nav: React.FC = () => {
                     className="nav__github"
                     target="_blank"
                 >
+                    <span>Github</span>
                     <i className="fa-brands fa-github" title="Github"></i>
                 </a>
             </div>

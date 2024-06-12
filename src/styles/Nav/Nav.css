@@ -47,7 +47,7 @@
     animation-name: none !important;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .nav__list {
     display: flex;
     flex-direction: column;
@@ -166,6 +166,9 @@
 }
 .nav__toggle__icons.open .fa-xmark {
   display: block;
+}
+.nav span {
+  display: none;
 }
 
 @media (max-width: 768px) {
