@@ -32,18 +32,21 @@ const Contact: React.FC = () => {
                     href="https://www.linkedin.com/in/nicolas-morvant/"
                     className="contact__linkedin"
                 >
+                    <span>Linkedin</span>
                     <i className="fa-brands fa-linkedin" title="Linkedin"></i>
                 </a>
                 <a
                     href="https://discordapp.com/users/nicolasmorvant"
                     className="contact__discord"
                 >
+                    <span>Discord</span>
                     <i className="fa-brands fa-discord" title="Discord"></i>
                 </a>
                 <a
                     href="https://github.com/nicolasmorvant"
                     className="contact__github"
                 >
+                    <span>Github</span>
                     <i className="fa-brands fa-github" title="Github"></i>
                 </a>
             </div>

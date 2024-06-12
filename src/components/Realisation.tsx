@@ -24,7 +24,7 @@ const Realisation: React.FC = () => {
     };
 
     return (
-        <section className="realisation" id="realisation">
+        <section className="realisation" id="realisations">
             <h3 className="realisation__title">
                 Réal
                 <span className="realisation__title--lightblue">isations</span>
@@ -39,12 +39,14 @@ const Realisation: React.FC = () => {
                             <span
                                 className="projet__navigation--left"
                                 onClick={prevProjet}
+                                aria-label="Réalisation précédente"
                             >
                                 <i className="fa-solid fa-chevron-left"></i>
                             </span>
                             <span
                                 className="projet__navigation--right"
                                 onClick={nextProjet}
+                                aria-label="Réalisation suivante"
                             >
                                 <i className="fa-solid fa-chevron-right"></i>
                             </span>

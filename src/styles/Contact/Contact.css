@@ -39,6 +39,9 @@
     display: none;
   }
 }
+.contact__social span {
+  display: none;
+}
 .contact__social i {
   color: white;
   font-size: 25px;

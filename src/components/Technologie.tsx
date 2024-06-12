@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Technologie/Technologie.css';
-import technologies from '../technos.json';
+import Slideshow from './Slideshow';
 
 const Technologie: React.FC = () => {
     return (
@@ -10,17 +10,7 @@ const Technologie: React.FC = () => {
                 <span className="technologie__title--lightblue">logies</span>
             </h3>
             <div className="technologie__desc">
-                {technologies.map((techno, index) => (
-                    <img
-                        width="50px"
-                        height="50px"
-                        src={`https://cdn.simpleicons.org/${techno.slug}/${techno.hexa}`}
-                        key={index}
-                        className="technologie__desc__img"
-                        title={`${techno.title}`}
-                        loading="lazy"
-                    />
-                ))}
+                <Slideshow />
             </div>
         </section>
     );
