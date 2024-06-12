@@ -113,7 +113,7 @@
 }
 .nav__link:hover {
   transform: scaleX(1.1);
-  color: #36b8ff;
+  color: #ff9536;
 }
 @media (max-width: 768px) {
   .nav__link:hover {
@@ -140,7 +140,7 @@
     font-size: 25px;
   }
   .nav__social i:hover {
-    color: #36b8ff;
+    color: #ff9536;
   }
 }
 .nav__toggle__icons {

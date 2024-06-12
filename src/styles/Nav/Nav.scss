@@ -1,14 +1,17 @@
 @import '../Tool/variables';
 @import '../Tool/mixins';
 
-.nav {
+.nav 
+{
     margin: auto 0;
 
-    @media (max-width: 1024px) {
+    @media(max-width: 1024px) 
+    {
         margin: 0 auto;
     }
 
-    @media (max-width: 768px) {
+    @media(max-width: 768px) 
+    {
         @include flexContainer(row, space-between, flex-start, wrap);
         width: 100%;
         flex: 0 1 25%;
@@ -16,12 +19,14 @@
         padding: 0 20px;
     }
 
-    &__list {
+    &__list 
+    {
         @include flexContainer(column, space-between, flex-start, nowrap);
         height: 100%;
         row-gap: 30px;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1024px) 
+        {
             @include flexContainer(row, center, flex-start, wrap);
             width: 100%;
             height: auto;
@@ -58,11 +63,13 @@
         }
     }
 
-    &__item {
+    &__item 
+    {
         position: relative;
     }
 
-    &__link {
+    &__link 
+    {
         display: block;
         position: relative;
         width: 200px;
@@ -83,13 +90,15 @@
             font-size: 16px;
             padding: 10px 0px;
 
-            &:first-child {
+            &:first-child 
+            {
                 padding-top: 0;
             }
         }
 
         //LIGNE BLEUE
-        &::before {
+        &::before 
+        {
             content: '';
             display: block;
             position: absolute;
@@ -99,38 +108,45 @@
             border: 1px solid $lightblue;
             margin-bottom: 10px;
 
-            @media (max-width: 768px) {
+            @media (max-width: 768px) 
+            {
                 display: none;
             }
         }
 
         &:hover {
             transform: scaleX(1.1);
-            color: $lightblue;
+            color: $coolorange;
 
-            @media (max-width: 768px) {
+            @media (max-width: 768px) 
+            {
                 color: $coolorange;
                 transform: none;
             }
         }
 
-        &:hover ~ .squares {
+        &:hover ~ .squares 
+        {
             transform: scaleX(1.1) translateX(10px);
         }
     }
 
-    &__social {
+    &__social 
+    {
         display: none;
 
-        @media (max-width: 768px) {
+        @media (max-width: 768px) 
+        {
             @include flexContainer(row, space-between, center, wrap);
             gap: 15px;
 
-            i {
+            i 
+            {
                 font-size: 25px;
 
-                &:hover {
-                    color: $lightblue;
+                &:hover 
+                {
+                    color: $coolorange;
                 }
             }
         }
