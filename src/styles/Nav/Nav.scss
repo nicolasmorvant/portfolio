@@ -161,6 +161,11 @@
                 @media(max-width: 768px) 
                 {
                     display: block;
+
+                    &:hover
+                    {
+                        color: $coolorange;
+                    }
                 }
 
                 font-size: 25px;

@@ -152,6 +152,9 @@
   .nav__toggle__icons {
     display: block;
   }
+  .nav__toggle__icons:hover {
+    color: #ff9536;
+  }
 }
 .nav__toggle__icons .fa-bars {
   display: block;
