@@ -60,7 +60,7 @@
 }
 .realisation__desc .projet__title {
   text-align: center;
-  color: white;
+  color: #ff9536;
   font-size: 16px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
