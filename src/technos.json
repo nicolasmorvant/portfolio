@@ -126,11 +126,6 @@
                 "slug": "ubuntu",
                 "hexa": "#E95420",
                 "title": "Ubuntu"
-            },
-            {
-                "slug": "windows",
-                "hexa": "#0078D4",
-                "title": "Windows"
             }
         ]
     }
