@@ -1,0 +1,11 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.tag 
+{
+    font-size: 14px;
+    padding: 5px;
+    color: $lightblue;
+    background-color: transparent;
+    border: 2px solid $lightblue;
+}

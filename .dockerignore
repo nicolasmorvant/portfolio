@@ -1,0 +1,29 @@
+#NODE
+/node_modules
+npm-debug.log
+
+#IDE
+.vscode/
+
+#README
+*.md
+
+#FICHIERS DE CONFIG OS
+.DS_Store
+Thumbs.db
+
+#FICHIERS ET RÉPERTOIRES DE BUILD LOCAUX
+build/
+dist/
+out/
+
+#FICHIERS DE LOGS
+*.log
+
+#DOCKER
+Dockerfile
+.dockerignore
+
+#FICHIERS CONFIG ENV
+.env
+.env.local

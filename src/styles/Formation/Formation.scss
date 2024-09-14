@@ -1,0 +1,67 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.formation 
+{
+    @include flexContainer(column, center, center, nowrap);
+    row-gap: 20px;
+    width: 100%;
+    overflow: scroll;
+
+    @media (max-width: 768px) 
+    {
+        margin-top: 50px;
+        row-gap: 60px;
+    }
+
+    &__title 
+    {
+        &--lightblue 
+        {
+            color: $lightblue;
+        }
+    }
+
+    &__item 
+    {
+        @include flexContainer(row, space-between, flex-start, wrap);
+        margin-bottom: 25px;
+    }
+
+    &__year 
+    {
+        flex: 0 1 10%;
+
+        &--tearose 
+        {
+            color: $tearose;
+        }
+
+        @media(max-width: 768px) 
+        {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__desc 
+    {
+        flex: 0 1 85%;
+
+        &__title 
+        {
+            margin-bottom: 10px;
+            color: $coolorange;
+        }
+
+        &__text 
+        {
+            font-size: 12px;
+            font-weight: bold;
+
+            @media(max-width: 768px) 
+            {
+                font-size: 15px;
+            }
+        }
+    }
+}

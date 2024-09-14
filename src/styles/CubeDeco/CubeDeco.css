@@ -1,0 +1,72 @@
+.dashed {
+  display: block;
+  height: 10px;
+  position: absolute;
+  top: -19px;
+  left: 175px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5px;
+  z-index: 999;
+}
+@media (max-width: 768px) {
+  .dashed {
+    display: none;
+  }
+}
+.dashed__part {
+  height: 100%;
+  width: 5px;
+  background-color: #36b8ff;
+  transform: skewX(30deg);
+}
+
+.cube__squares {
+  display: block;
+  height: 12px;
+  position: absolute;
+  bottom: -19px;
+  left: 20px;
+  width: 250px;
+  border: 1px solid #36b8ff;
+  border-top: 0;
+  padding: 0 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .cube__squares {
+    display: none;
+  }
+}
+.cube__squares__item {
+  height: 9px;
+  width: 8px;
+  background-color: #36b8ff;
+  border: 1px solid #36b8ff;
+}
+.cube__squares__item:nth-child(odd) {
+  animation: changerCouleurImpair 2s infinite alternate;
+}
+.cube__squares__item:nth-child(even) {
+  animation: changerCouleurPair 2s infinite alternate;
+}
+
+@keyframes changerCouleurImpair {
+  0% {
+    background-color: #36b8ff;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes changerCouleurPair {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #36b8ff;
+  }
+}
+
+/*# sourceMappingURL=CubeDeco.css.map */

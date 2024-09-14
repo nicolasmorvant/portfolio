@@ -1,0 +1,63 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 20px;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .contact {
+    margin-top: 50px;
+  }
+}
+.contact__title--lightblue {
+  color: #36b8ff;
+}
+.contact__mail__and__phone {
+  font-weight: bold;
+}
+.contact__mail__and__phone i {
+  margin-right: 20px;
+}
+.contact__mail {
+  margin-bottom: 20px;
+}
+.contact__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 20px;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .contact__social {
+    display: none;
+  }
+}
+.contact__social span {
+  display: none;
+}
+.contact__social i {
+  color: white;
+  font-size: 25px;
+}
+.contact__social i:hover {
+  color: #36b8ff;
+}
+.contact .loader__container {
+  display: none;
+}
+@media (max-width: 768px) {
+  .contact .loader__container {
+    display: block;
+    margin-top: 100px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=Contact.css.map */

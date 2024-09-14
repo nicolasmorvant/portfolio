@@ -1,0 +1,109 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.slideshow
+{
+    @include flexContainer(column, space-around, center, nowrap);
+    @include fullSize;
+
+    &__navigation 
+    {
+        @include fullSize;
+        position: absolute;
+        z-index: 3;
+        font-size: 20px;
+
+        &--left 
+        {
+            position: absolute;
+            left: 20px;
+
+            @media(max-width: 768px)
+            {
+                left: 40px;
+            }
+        }
+
+        &--right 
+        {
+            position: absolute;
+            right: 20px;
+
+            @media(max-width: 768px)
+            {
+                right: 40px;
+            }
+        }
+    }
+
+    &__title
+    {
+        color: $coolorange;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__category
+    {
+        display: none;
+
+        &--active
+        {
+            @include flexContainer(column, flex-start, center, wrap);
+            width: 100%;
+            height: 70%;
+            row-gap: 40px;
+            font-weight: bold;
+
+            @media(max-width: 768px)
+            {
+                margin-top: 50px;
+                height: auto;
+            }
+        }
+    }
+
+    &__technos
+    {           
+        @include flexContainer(row, center, center, wrap);
+        gap: 20px;
+        width: 80%;
+
+        &__img
+        {
+            filter: invert(100%);
+            z-index: 999;
+
+            &:hover
+            {
+                animation-name: rotation;
+                animation-duration: 0.8s;
+            }
+        }         
+    }
+
+    i:hover
+    {
+        color: $coolorange;
+        cursor: pointer;
+    }
+}
+
+@keyframes rotation 
+{
+    0% {
+        transform: rotateX(0deg);
+    }
+    33% {
+        transform: rotateX(90deg);
+    }
+    50% {
+        transform: rotateX(180deg);
+    }
+    66% {
+        transform: rotateX(270deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}

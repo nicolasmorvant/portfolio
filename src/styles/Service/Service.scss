@@ -1,0 +1,50 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.services 
+{
+    @include flexContainer(column, center, center, nowrap);
+    width: 100%;
+    row-gap: 20px;
+
+    @media (max-width: 576px) 
+    {
+        margin-top: 25px;
+    }
+
+    &__title 
+    {
+        margin-bottom: 20px;
+
+        &--lightblue 
+        {
+            color: $lightblue;
+        }
+    }
+
+    &__item 
+    {
+        &__title 
+        {
+            color: $coolorange;
+
+            @media (max-width: 576px) 
+            {
+                font-size: 15px;
+            }
+        }
+
+        &__text 
+        {
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            padding-left: 20px;
+
+            @media (max-width: 576px) 
+            {
+                font-size: 15px;
+            }
+        }
+    }
+}

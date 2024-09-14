@@ -1,0 +1,223 @@
+@import '../Tool/variables';
+@import '../Tool/mixins';
+
+.nav 
+{
+    margin: auto 0;
+
+    @media(max-width: 1024px) 
+    {
+        margin: 0 auto;
+    }
+
+    @media(max-width: 768px) 
+    {
+        @include flexContainer(row, space-between, flex-start, wrap);
+        width: 100%;
+        flex: 0 1 25%;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    &__list 
+    {
+        @include flexContainer(column, space-between, flex-start, nowrap);
+        height: 100%;
+        row-gap: 30px;
+
+        @media (max-width: 1024px) 
+        {
+            @include flexContainer(row, center, flex-start, wrap);
+            width: 100%;
+            height: auto;
+            column-gap: 30px;
+        }
+
+        @media(min-width: 768px)
+        {
+            &--visible
+            {
+                visibility: visible !important;
+                height: auto !important;
+                animation-name: none !important;
+            }
+        }
+
+        @media (max-width: 768px) 
+        {
+            @include flexContainer(column, flex-start, flex-start, nowrap);
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+            transform-origin: top;
+            transition: visibility 1s ease-in, height 1s ease-in;
+
+            &--visible
+            {
+                visibility: visible;
+                height: auto;
+                animation-name: deplacementVertical;
+                animation-duration: 0.5s;
+                row-gap: 0;
+            } 
+        }
+    }
+
+    &__item 
+    {
+        position: relative;
+    }
+
+    &__link 
+    {
+        display: block;
+        position: relative;
+        width: 200px;
+        color: #ffffff;
+        padding: 15px 20px;
+        border: 3px solid $lightblue;
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+        transform-origin: left;
+
+        @media(max-width: 768px) 
+        {
+            width: auto;
+            border: none;
+            color: $lightblue;
+            transition: color 0.8s ease-in-out;
+            text-align: left;
+            font-size: 16px;
+            padding: 10px 0px;
+
+            &:first-child 
+            {
+                padding-top: 0;
+            }
+        }
+
+        //LIGNE BLEUE
+        &::before 
+        {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 6px;
+            width: 180px;
+            border: 1px solid $lightblue;
+            margin-bottom: 10px;
+
+            @media (max-width: 768px) 
+            {
+                display: none;
+            }
+        }
+
+        &:hover {
+            transform: scaleX(1.1);
+            color: $coolorange;
+
+            @media (max-width: 768px) 
+            {
+                color: $coolorange;
+                transform: none;
+            }
+        }
+
+        &:hover ~ .squares 
+        {
+            transform: scaleX(1.1) translateX(10px);
+        }
+    }
+
+    &__social 
+    {
+        display: none;
+
+        @media (max-width: 768px) 
+        {
+            @include flexContainer(row, space-between, center, wrap);
+            gap: 15px;
+
+            i 
+            {
+                font-size: 25px;
+
+                &:hover 
+                {
+                    color: $coolorange;
+                }
+            }
+        }
+    }
+
+    &__toggle 
+    {
+            &__icons 
+            {
+                display: none;
+
+                @media(max-width: 768px) 
+                {
+                    display: block;
+
+                    &:hover
+                    {
+                        color: $coolorange;
+                    }
+                }
+
+                font-size: 25px;
+                margin-bottom: 20px;
+    
+                .fa-bars 
+                {
+                    display: block;
+                    width: fit-content;
+                }
+    
+                .fa-xmark 
+                {
+                    display: none;
+                    width: fit-content;
+                }
+    
+                &.open 
+                {
+                    .fa-bars 
+                    {
+                        display: none;
+                    }
+    
+                    .fa-xmark 
+                    {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        span
+        {
+            display: none;
+        }
+}
+
+@media(max-width: 768px) 
+{
+    .miroir 
+    {
+        transform: translateX(180deg);
+    }
+}
+
+@keyframes deplacementVertical
+{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    } 
+}

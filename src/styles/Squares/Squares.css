@@ -1,0 +1,21 @@
+.squares {
+  position: absolute;
+  bottom: -5px;
+  left: 9px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+  .squares {
+    display: none;
+  }
+}
+.squares__item {
+  background-color: #36b8ff;
+  width: 5px;
+  height: 5px;
+}
+
+/*# sourceMappingURL=Squares.css.map */

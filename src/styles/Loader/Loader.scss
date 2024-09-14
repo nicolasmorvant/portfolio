@@ -1,0 +1,61 @@
+@import '../Tool/variables';
+@import '../Tool/mixins';
+
+.loader {
+    &__container,
+    &__cube {
+        transform-style: preserve-3d;
+    }
+
+    &__container {
+        @include flexContainer(row,center,center,nowrap);
+        position: relative;
+        height: 100vh;
+    }
+
+    &__cube {
+        @include size100;
+        position: relative;
+        animation: spin 3s infinite linear;
+    }
+
+    &__side {
+        position: absolute;
+        @include size100;
+        border: 3px solid #fff;
+        box-sizing: border-box;
+
+        &--front {
+            transform: translateZ(50px);
+        }
+
+        &--back {
+            transform: rotateY(180deg) translateZ(50px);
+        }
+
+        &--left {
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+
+        &--right {
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        &--top {
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        &--bottom {
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}

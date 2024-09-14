@@ -1,0 +1,61 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.contact {
+    @include flexContainer(column, center, center, nowrap);
+    row-gap: 20px;
+    width: 100%;
+
+    @media (max-width: 576px) {
+        margin-top: 50px;
+    }
+
+    &__title {
+        &--lightblue {
+            color: $lightblue;
+        }
+    }
+
+    &__mail__and__phone
+    {
+        font-weight: bold;
+    }
+
+    &__mail__and__phone i {
+        margin-right: 20px;
+    }
+
+    &__mail {
+        margin-bottom: 20px;
+    }
+
+    &__social {
+        @include flexContainer(row, center, center, nowrap);
+        column-gap: 20px;
+        text-align: center;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        i {
+            color: white;
+            font-size: 25px;
+
+            &:hover {
+                color: $lightblue;
+            }
+        }
+    }
+
+    .loader__container {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+            margin-top: 100px;
+            height: 200px;
+        }
+    }
+}

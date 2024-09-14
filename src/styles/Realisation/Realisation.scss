@@ -1,0 +1,292 @@
+@import '../Tool/mixins';
+@import '../Tool/variables';
+
+.realisation 
+{
+    @include flexContainer(column, center, center, nowrap);
+    row-gap: 20px;
+    width: 100%;
+
+    @media (max-width: 768px) 
+    {
+        margin-top: 50px;
+    }
+
+    &__title 
+    {
+        margin-bottom: 20px;
+
+        &--lightblue 
+        {
+            color: $lightblue;
+        }
+    }
+
+    &__desc 
+    {
+        height: 70%;
+        width: 100%;
+        background-color: transparent;
+        font-weight: bold;
+        border: 2px solid $lightblue;
+        border-radius: 1px;
+        overflow: hidden;
+        transition: border-color 1s ease-in-out;
+
+        @media (max-width: 768px) 
+        {
+            height: 300px;
+            max-height: 300px;
+            border: none;
+        }
+
+        .projet 
+        {
+            @include fullSize;
+            position: relative;
+            display: none;
+
+            &__navigation 
+            {
+                @include fullSize;
+                position: absolute;
+                z-index: 3;
+                font-size: 20px;
+
+                &--left 
+                {
+                    position: absolute;
+                    top: 48%;
+                    left: 20px;
+                }
+
+                &--right 
+                {
+                    position: absolute;
+                    top: 48%;
+                    right: 20px;
+                }
+            }
+
+            &__title 
+            {
+                text-align: center;
+                color: $coolorange;
+                font-size: 16px;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+
+            &__desc 
+            {
+                margin-top: 15px;
+                text-align: center;
+                font-size: 14px;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+
+            &__img 
+            {
+                @include absoluteTopLeft;
+                @include fullSize;
+                opacity: 1;
+                transition: opacity 1s ease-in-out;
+
+                @media(max-width: 768px) 
+                {
+                    object-fit: contain;
+                }
+            }
+
+            &__link
+            {
+                @include flexContainer(row,center,center,nowrap);
+                margin-top: 25px;
+                position: relative;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+
+                @media (max-width: 768px) 
+                {
+                    width: 150px;
+                    margin: 25px auto;
+                }
+
+                &__button 
+                {
+                    z-index: 999;
+                    cursor: pointer;
+                    position: relative;
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    border: none;
+                    background: none;
+                    padding: 5px 10px;
+                    transition: all 0.15s ease;
+
+                    &::before, &::after 
+                    {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        height: calc(50% - 5px);
+                        border: 1px solid $lightblue;
+                        transition: all 0.15s ease;
+                    }
+
+                    &::before 
+                    {
+                        top: 0;
+                        border-bottom-width: 0;
+                    }
+
+                    &::after 
+                    {
+                        bottom: 0;
+                        border-top-width: 0;
+                    }
+
+                    &:active, &:focus 
+                    {
+                        outline: none;
+                    }
+
+                    &:active::before, &:active::after 
+                    {
+                        right: 3px;
+                        left: 3px;
+                    }
+
+                    &:active::before 
+                    {
+                        top: 3px;
+                    }
+
+                    &:active::after 
+                    {
+                        bottom: 3px;
+                    }
+
+                    &--lg 
+                    {
+                        position: relative;
+                        display: block;
+                        padding: 10px 20px;
+                        color: #fff;
+                        background-color: transparent;
+                        overflow: hidden;
+                        box-shadow: inset 0px 0px 0px 1px transparent;
+                    }
+
+                    &--lg::before 
+                    {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 2px;
+                        height: 2px;
+                        background-color: transparent;
+                    }
+
+                    &--lg::after 
+                    {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 4px;
+                        height: 4px;
+                        background-color: transparent;
+                        transition: all 0.2s ease;
+                    }
+
+                    &--sl 
+                    {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        bottom: -1px;
+                        left: -8px;
+                        width: 0;
+                        background-color: $coolorange;
+                        transform: skew(-15deg);
+                        transition: all 0.2s ease;
+                    }
+
+                    &--text 
+                    {
+                        position: relative;
+                    }
+
+                    &:hover 
+                    {
+                        cursor: pointer;
+                    }
+
+                    &:hover .projet__link__button--sl 
+                    {
+                        width: calc(100% + 15px);
+                    }
+
+                    &:hover .projet__link__button--lg::after 
+                    {
+                        background-color: white;
+                    }
+                }
+            }
+
+            &:hover .projet__img 
+            {
+                opacity: 0;
+            }
+
+            &:hover .projet__title, &:hover .projet__desc, &:hover .projet__link, &:hover .tag 
+            {
+                opacity: 1;
+            }
+
+            &__tags 
+            {
+                @include flexContainer(row,center,center,wrap);
+                margin-top: 15px;
+                width: 100%;
+                padding: 0 10px;
+                gap: 5px;
+            }
+
+            .tag 
+            {
+                border-radius: 10px;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+
+            &--active 
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 10px;
+            }
+        }
+    }
+
+    //NAVIGATION
+    .fa-solid 
+    {
+        &:hover 
+        {
+            cursor: pointer;
+            color: $coolorange;
+        }
+    }
+}

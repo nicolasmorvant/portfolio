@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /src/components/
+Disallow: /src/styles/
+
+Allow: /src/assets/

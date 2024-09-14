@@ -1,0 +1,54 @@
+.loader__container, .loader__cube {
+  transform-style: preserve-3d;
+}
+.loader__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  height: 100vh;
+}
+.loader__cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: spin 3s infinite linear;
+}
+.loader__side {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+}
+.loader__side--front {
+  transform: translateZ(50px);
+}
+.loader__side--back {
+  transform: rotateY(180deg) translateZ(50px);
+}
+.loader__side--left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+.loader__side--right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+.loader__side--top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+.loader__side--bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/*# sourceMappingURL=Loader.css.map */
