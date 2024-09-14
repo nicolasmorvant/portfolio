@@ -53,38 +53,12 @@ const Slideshow = () => {
                                         width="50px"
                                         height="50px"
                                         src={
-                                            tech.title === 'Wave'
+                                                tech.title === 'wave'
                                                 ? 'https://cdn.worldvectorlogo.com/logos/wave-2.svg'
-                                                : tech.title === 'Vite.js'
+                                                : tech.title === 'vite.js'
                                                 ? 'https://www.svgrepo.com/show/374167/vite.svg'
-                                                : tech.title === 'React'
-                                                ? 'https://cdn.simpleicons.org/react'
-                                                : tech.title === 'Node.js'
-                                                ? 'https://cdn.simpleicons.org/node.js'
-                                                : tech.title === 'Express.js'
-                                                ? 'https://cdn.simpleicons.org/express'
-                                                : tech.title === 'PHP'
-                                                ? 'https://cdn.simpleicons.org/php'
-                                                : tech.title === 'Symfony'
-                                                ? 'https://cdn.simpleicons.org/symfony'
-                                                : tech.title === 'MongoDB'
-                                                ? 'https://cdn.simpleicons.org/mongodb'
-                                                : tech.title === 'MySql'
-                                                ? 'https://cdn.simpleicons.org/mysql'
-                                                : tech.title === 'Github'
-                                                ? 'https://cdn.simpleicons.org/github'
-                                                : tech.title === 'Postman'
-                                                ? 'https://cdn.simpleicons.org/postman'
-                                                : tech.title === 'Swagger'
-                                                ? 'https://cdn.simpleicons.org/swagger'
-                                                : tech.title === 'Docker'
-                                                ? 'https://cdn.simpleicons.org/docker'
-                                                : tech.title === 'Lighthouse'
-                                                ? 'https://cdn.simpleicons.org/lighthouse'
-                                                : tech.title === 'Ubuntu'
-                                                ? 'https://cdn.simpleicons.org/ubuntu'
-                                                : 'https://cdn.simpleicons.org/xfce'
-                                        }
+                                                :  `https://cdn.simpleicons.org/${tech.title}`
+                                        }                                        
                                         key={i + 1}
                                         className="slideshow__technos__img"
                                         title={`${tech.title}`}

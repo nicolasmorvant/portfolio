@@ -3,34 +3,22 @@
         "title": "Frontend",
         "technos": [
             {
-                "slug": "react",
-                "hexa": "#61DAFB",
-                "title": "React"
+                "title": "react"
             },
             {
-                "slug": "reactrouter",
-                "hexa": "#CA4245",
-                "title": "React Router"
+                "title": "reactrouter"
             },
             {
-                "slug": "sass",
-                "hexa": "#CC6699",
-                "title": "Sass"
+                "title": "sass"
             },
             {
-                "slug": "typescript",
-                "hexa": "#3178C6",
-                "title": "Typescript"
+                "title": "typescript"
             },
             {
-                "slug": "bootstrap",
-                "hexa": "#7952B3",
-                "title": "Bootstrap"
+                "title": "bootstrap"
             },
             {
-                "slug": "jquery",
-                "hexa": "#0769AD",
-                "title": "jQuery"
+                "title": "jquery"
             }
         ]
     },
@@ -38,24 +26,16 @@
         "title": "Backend",
         "technos": [
             {
-                "slug": "nodedotjs",
-                "hexa": "#5FA04E",
-                "title": "Node.js"
+                "title": "nodejs"
             },
             {
-                "slug": "express",
-                "hexa": "#000000",
-                "title": "Express.js"
+                "title": "express"
             },
             {
-                "slug": "php",
-                "hexa": "#777BB4",
-                "title": "PHP"
+                "title": "php"
             },
             {
-                "slug": "symfony",
-                "hexa": "#000000",
-                "title": "Symfony"
+                "title": "symfony"
             }
         ]
     },
@@ -63,14 +43,10 @@
         "title": "Bases de données",
         "technos": [
             {
-                "slug": "mongodb",
-                "hexa": "#47A248",
-                "title": "MongoDB"
+                "title": "mongodb"
             },
             {
-                "slug": "mysql",
-                "hexa": "#4479A1",
-                "title": "MySql"
+                "title": "mysql"
             }
         ]
     },
@@ -78,29 +54,19 @@
         "title": "Outils de développement",
         "technos": [
             {
-                "slug": "vite",
-                "hexa": "#646CFF",
-                "title": "Vite.js"
+                "title": "vite.js"
             },
             {
-                "slug": "github",
-                "hexa": "#181717",
-                "title": "Github"
+                "title": "github"
             },
             {
-                "slug": "postman",
-                "hexa": "#FF6C37",
-                "title": "Postman"
+                "title": "postman"
             },
             {
-                "slug": "swagger",
-                "hexa": "#85EA2D",
-                "title": "Swagger"
+                "title": "swagger"
             },
             {
-                "slug": "docker",
-                "hexa": "#2496ED",
-                "title": "Docker"
+                "title": "docker"
             }
         ]
     },
@@ -108,14 +74,10 @@
         "title": "Optimisation SEO",
         "technos": [
             {
-                "slug": "lighthouse",
-                "hexa": "#F44B21",
-                "title": "Lighthouse"
+                "title": "lighthouse"
             },
             {
-                "slug": "wave",
-                "hexa": "#4877b5",
-                "title": "Wave"
+                "title": "wave"
             }
         ]
     },
@@ -123,9 +85,7 @@
         "title": "OS",
         "technos": [
             {
-                "slug": "ubuntu",
-                "hexa": "#E95420",
-                "title": "Ubuntu"
+                "title": "ubuntu"
             }
         ]
     }
